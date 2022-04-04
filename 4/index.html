@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+    <base href="https://htmlacademy-adaptive.github.io/1853291-pink-25/4/">
+</head>
+  <body class="page__body">
+    <header class="header">
+      <a class="header__logo logo" href="index.html">
+        <img src="https://via.placeholder.com/74x23" width="74" height="23" alt="Логотип Пинк.">
+      </a>
+      <nav class="header-nav">
+        <button class="header-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню.</span>
+        </button>
+        <ul class="header-nav__list nav-list">
+          <li class="nav-list__item nav-list__item--current">
+            <a class="nav-list__link" href="index.html">Главная</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="photo.html">Фотографии</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="form.html">Конкурс</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="https://htmlacademy.ru/">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-container">
+      <h1 class="visually-hidden">Пинк - мобильное приложение для раскрашивания серых будней в розовый цвет</h1>
+      <section class="download-app">
+        <h2 class="visually-hidden">Скачать приложение на своё устройство.</h2>
+        <p class="download-app__slogan">Взгляните на жизнь иначе!</p>
+        <div class="download-app__wrapper">
+          <a class="download-app__link button-primary" href="#">Скачать приложение</a>
+          <ul class="download-app__list">
+            <li class="download-app__item">
+              <a class="download-app__link download-app__link--apple" href="#">
+                <span class="visually-hidden">Скачать в App Store.</span>
+              </a>
+            </li>
+            <li class="download-app__item">
+              <a class="download-app__link download-app__link--android" href="#">
+                <span class="visually-hidden">Скачать в Google Play.</span>
+              </a>
+            </li>
+            <li class="download-app__item">
+              <a class="download-app__link download-app__link--windows" href="#">
+                <span class="visually-hidden">Скачать в Microsoft Store.</span>
+              </a>
+            </li>
+          </ul>
+          <p class="download-app__description">
+            Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+          </p>
+        </div>
+      </section>
+      <section class="product-features">
+        <h2 class="visually-hidden">Основные особенности товара.</h2>
+        <div class="product-features__subtitle">
+          <p class="subtitle">
+            Устали от серости мегаполиса?
+          </p>
+          <p class="subtitle">
+            Нам есть, что вам предложить!
+          </p>
+        </div>
+        <ul class="product-features__list">
+          <li class="product-features__item">
+            <h3 class="product-features__title">
+              Поднимает настроение
+            </h3>
+            <p class="product-features__description">
+              Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+            </p>
+          </li>
+          <li class="product-features__item">
+            <h3 class="product-features__title">
+              Меняет мир вокруг
+            </h3>
+            <p class="product-features__description">
+              Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+            </p>
+          </li>
+          <li class="product-features__item">
+            <h3 class="product-features__title">
+              Заводит новых друзей
+            </h3>>
+            <p class="product-features__description">
+              Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+            </p>
+            <img class="product-features__img" src="https://via.placeholder.com/157x290" width="157" height="290" alt="Пример использования фильтра и комментариев в приложении Пинк.">
+          </li>
+        </ul>
+      </section>
+      <section class="feedback">
+        <h2 class="visually-hidden">Отзывы.</h2>
+        <div class="feedback__item feedback-item">
+          <p class="feedback-item__author">Николай Петров</p>
+          <p class="feedback-item__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          <div class="feedback__pagination slider-pagination">
+            <button class="slider-pagination__toggle slider-pagination__toggle--current" type="button">
+              <span class="visually-hidden">Отзыв №1.</span>
+            </button>
+            <button class="slider-pagination__toggle" type="button">
+              <span class="visually-hidden">Отзыв №2.</span>
+            </button>
+            <button class="slider-pagination__toggle" type="button">
+              <span class="visually-hidden">Отзыв №3.</span>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="price">
+        <h2 class="visually-hidden>">Тарифы и доступные опции.</h2>
+        <table class="price__table price-table">
+          <thead>
+            <tr>
+              <th class="price-table__category price-table__category--none"></th>
+              <th class="price-table__category">
+                База
+                <p>1,99&nbsp;USD</p>
+              </th>
+              <th class="price-table__category price-table__category--special">
+                Стандарт
+                <p>3,99&nbsp;USD</p>
+              </th>
+              <th class="price-table__category">
+                Анлим
+                <p>9,99&nbsp;USD</p>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th class="price-table__option">Розовый фильтр</th>
+              <td class="price-table__option price-table__option--yes">
+                <span class="visually-hidden">Доступная опция</span>
+              </td>
+              <td class="price-table__option price-table__option--yes">
+                <span class="visually-hidden">Доступная опция</span>
+              </td>
+              <td class="price-table__option price-table__option--yes">
+                <span class="visually-hidden">Доступная опция</span>
+              </td>
+            </tr>
+            <tr>
+              <th class="price-table__option">Смайлики</th>
+              <td class="price-table__option price-table__option--no">
+                <span class="visually-hidden">Недоступная опция</span>
+              </td>
+              <td class="price-table__option price-table__option--yes">
+                <span class="visually-hidden">Доступная опция</span>
+              </td>
+              <td class="price-table__option price-table__option--yes">
+                <span class="visually-hidden">Доступная опция</span>
+              </td>
+            </tr>
+            <tr>
+              <th class="price-table__option">Комментарии</th>
+              <td class="price-table__option price-table__option--no">
+                <span class="visually-hidden">Недоступная опция</span>
+              </td>
+              <td class="price-table__option price-table__option--no">
+                <span class="visually-hidden">Недоступная опция</span>
+              </td>
+              <td class="price-table__option price-table__option--yes">
+                <span class="visually-hidden">Доступная опция</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="price__pagination slider-pagination">
+          <button class="slider-pagination__toggle" type="button">
+            <span class="visually-hidden">Переключить слайд.</span>
+          </button>
+          <button class="slider-pagination__toggle slider-pagination__toggle--current" type="button">
+            <span class="visually-hidden">Текущий слайд.</span>
+          </button>
+          <button class="slider-pagination__toggle" type="button">
+            <span class="visually-hidden">Переключить слайд.</span>
+          </button>
+        </div>
+      </section>
+      <section class="contacts">
+        <h2 class="visually-hidden">Наши контакты.</h2>
+        <p class="contacts__subtitle subtitle">Остались вопросы?
+          Свяжитесь с нами!</p>
+        <dl class="contacts__list">
+          <div class="contacts__item">
+            <dt class="contacts__subtitle">Звоните:</dt>
+            <dd>
+              <a class="contacts__link" href="tel:+78125556666">+7 (812) 555-66-66</a>
+            </dd>
+          </div>
+          <div class="contacts__item">
+            <dt class="contacts__subtitle">Пишите:</dt>
+            <dd>
+              <a class="contacts__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            </dd>
+          </div>
+          <div class="contacts__item">
+            <dt class="contacts__subtitle">Приезжайте в гости:</dt>
+            <dd>
+              <a class="contacts__link" href="#">ул. Большая
+                Конюшенная, 19/8</a>
+            </dd>
+          </div>
+        </dl>
+        <div class="contacts__map map-wrapper">
+          <img class="map" src="https://via.placeholder.com/320x200" width="320" height="200" alt="Наше месторасположение на карте.">
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__logo logo-wrapper">
+        <a class="logo" href="#">
+          <img src="https://via.placeholder.com/145x40" width="145" height="40" alt="Логотип Пинк.">
+        </a>
+      </div>
+      <div class="footer__socials socials-wrapper">
+        <ul class="socials-list">
+          <li class="socials-list__item">
+            <a class="socials-list__link socials-list__link--vk" href="#">
+              <span class="visually-hidden">Логотип Вконтакте.</span>
+            </a>
+          </li>
+          <li class="socials-list__item">
+            <a class="socials-list__link socials-list__link--telegram" href="#">
+              <span class="visually-hidden">Логотип Telegram.</span>
+            </a>
+          </li>
+          <li class="socials-list__item">
+            <a class="socials-list__link socials-list__link--youtube" href="#">
+              <span class="visually-hidden">Логотип Youtube.</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__copyright copyright">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">Разработано
+          <span class="visually-hidden">HTML Academy.</span>
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
