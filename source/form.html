@@ -2,7 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
+    <title>Пинк: Конкурс</title>
   </head>
   <body class="page__body">
     <header class="header">
@@ -14,7 +14,7 @@
           <span class="visually-hidden">Открыть меню.</span>
         </button>
         <ul class="header-nav__list nav-list">
-          <li class="nav-list__item nav-list__item--current">
+          <li class="nav-list__item">
             <a class="nav-list__link" href="index.html">Главная</a>
           </li>
           <li class="nav-list__item">
@@ -30,28 +30,26 @@
       </nav>
     </header>
     <main class="main-container">
-      <div class="main-container__title-wrapper">
-        <h1 class="main-container__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
-        <p class="main-container__subtitle">
-          Поделитесь своей историей и получите
-          шанс выиграть ценный приз — 1000
-          миль на вашу бонусную карту!
-        </p>
-      </div>
+      <h1 class="main-container__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      <p class="main-container__subtitle">
+        Поделитесь своей историей и получите
+        шанс выиграть ценный приз — 1000
+        миль на вашу бонусную карту!
+      </p>
       <form class="main-container__form contest-form" method="post" action="https://echo.htmlacademy.ru">
         <fieldset class="contest-form__group form-group">
           <legend class="visually-hidden">Данные пользователя</legend>
-          <div class="form-group__field">
-            <label for="lastname-id" class="form-group__label">Фамилия:</label>
-            <input class="form-group__input" type="text" name="lastname" id="lastname-id" placeholder="Укажите фамилию *" required>
+          <div class="form-group__field field">
+            <label for="lastname-id" class="field__label">Фамилия:</label>
+            <input class="field__input" type="text" name="lastname" id="lastname-id" placeholder="Укажите фамилию *" required>
           </div>
-          <div class="form-group__field">
-            <label for="firstname-id" class="form-group__label">Имя:</label>
-            <input class="form-group__input" type="text" name="firstname" id="firstname-id" placeholder="Укажите имя *" required>
+          <div class="form-group__field field">
+            <label for="firstname-id" class="field__label">Имя:</label>
+            <input class="field__input" type="text" name="firstname" id="firstname-id" placeholder="Укажите имя *" required>
           </div>
-          <div class="form-group__field">
-            <label for="middlename-id" class="form-group__label">Отчество:</label>
-            <input class="form-group__input" type="text" name="middlename" id="middlename-id" placeholder="Ну и отчество тоже">
+          <div class="form-group__field field">
+            <label for="middlename-id" class="field__label">Отчество:</label>
+            <input class="field__input" type="text" name="middlename" id="middlename-id" placeholder="Ну и отчество тоже">
           </div>
         </fieldset>
         <fieldset class="contest-form__group form-achievement">
@@ -97,13 +95,13 @@
         </fieldset>
         <fieldset class="contest-form__group form-group">
           <legend class="visually-hidden">Контактная информация</legend>
-          <div class="form-group__field">
-            <label for="tel-id" class="form-group__label">Номер телефона</label>
-            <input class="form-group__input" type="tel" name="tel" id="tel-id" placeholder="Номер, пожалуйста">
+          <div class="form-group__field field">
+            <label for="tel-id" class="field__label">Номер телефона</label>
+            <input class="field__input" type="tel" name="tel" id="tel-id" placeholder="Номер, пожалуйста">
           </div>
-          <div class="form-group__field">
-            <label for="email-id" class="form-group__label">Адрес почты</label>
-            <input class="form-group__input" type="email" name="email" id="email-id" placeholder="Введите почту *" required>
+          <div class="form-group__field field">
+            <label for="email-id" class="field__label">Адрес почты</label>
+            <input class="field__input" type="email" name="email" id="email-id" placeholder="Введите почту *" required>
           </div>
         </fieldset>
         <fieldset class="contest-form__group form-app">
@@ -111,32 +109,30 @@
           <ul class="form-app__list">
             <li class="form-app__item">
               <label class="form-app__field radio">
-                <input class="radio__input" type="radio" name="radio" value="iOS" checked>
+                <input class="radio__input" type="radio" name="platform" value="iOS" checked>
                 <span class="radio__text">Pink для iOS</span>
               </label>
             </li>
             <li class="form-app__item">
               <label class="form-app__field radio">
-                <input class="radio__input" type="radio" name="radio" value="Android">
+                <input class="radio__input" type="radio" name="platform" value="Android">
                 <span class="radio__text">Pink на Android</span>
               </label>
             </li>
             <li class="form-app__item">
               <label class="form-app__field radio">
-                <input class="radio__input" type="radio" name="radio" value="Windows">
+                <input class="radio__input" type="radio" name="platform" value="Windows">
                 <span class="radio__text">Windows Phone</span>
               </label>
             </li>
           </ul>
         </fieldset>
-        <div class="contest-form__group form-group">
-          <label for="textarea-id" class="form-group__label">Опишите свои эмоции</label>
-          <textarea class="form-group__input" name="feedback-text" id="textarea-id" rows="5" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+        <div class="contest-form__group field">
+          <label for="feedback-text-id" class="field__label">Опишите свои эмоции</label>
+          <textarea class="field__input" name="feedback-text" id="feedback-text-id" rows="5" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </div>
-        <div class="contest-form__submit submit-wrapper">
-          <button class="contest-form__button form-button" type="submit">Отправить форму</button>
-          <p class="contest-form__required">* — обязательные поля</p>
-        </div>
+        <button class="contest-form__button form-button" type="submit">Отправить форму</button>
+        <p class="contest-form__required">* — обязательные поля</p>
       </form>
     </main>
     <footer class="footer">
@@ -165,7 +161,8 @@
         </ul>
       </div>
       <div class="footer__copyright copyright">
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">Разработано
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          Разработано
           <span class="visually-hidden">HTML Academy.</span>
         </a>
       </div>

@@ -2,7 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
+    <title>Пинк: Галерея</title>
   </head>
   <body class="page__body">
     <header class="header">
@@ -14,7 +14,7 @@
           <span class="visually-hidden">Открыть меню.</span>
         </button>
         <ul class="header-nav__list nav-list">
-          <li class="nav-list__item nav-list__item--current">
+          <li class="nav-list__item">
             <a class="nav-list__link" href="index.html">Главная</a>
           </li>
           <li class="nav-list__item nav-list__item--current">
@@ -30,180 +30,156 @@
       </nav>
     </header>
     <main class="main-container">
-      <h1 class="visually-hidden">Галерея.</h1>
       <section class="catalog">
-        <div class="catalog__title-wrapper">
-          <h2 class="catalog__title">Фотографии пользователей</h2>
-          <h3 class="catalog__subtitle">
-            Взгляните на фотографии, которые
-            выкладывают пользователи!
-            Видите, как не хватает ваших?
-          </h3>
-        </div>
+        <h1 class="catalog__title">Фотографии пользователей</h1>
+        <p class="catalog__slogan">
+          Взгляните на фотографии, которые
+          выкладывают пользователи!
+          Видите, как не хватает ваших?
+        </p>
         <ul class="catalog__list">
           <li class="catalog__item photo-card photo-card--special">
-            <img class="photo-card__img" src="https://via.placeholder.com/320x137" width="320" height="137" alt="Фото 1.">
+            <img class="photo-card__img" src="https://via.placeholder.com/320x137" width="320" height="137" alt="Подвесной мост для пешеходов в скайпарке Сочи.">
             <div class="photo-card__description">
               <div class="photo-card__heading">
                 <p class="photo-card__user">Анна</p>
                 <p class="photo-card__date">
-                  (<span>5</span>
-                  <span>минут</span>
-                  назад)
+                  (5 минут назад)
                 </p>
-                <p class="photo-card__text">
-                  Прыгать или нет? Напишите в
-                  комментарии свой совет и
-                  смотрите прямую трансляцию в
-                  перископе, задавайте свои вопросы!
-                </p>
-                <div class="photo-card__like like">
-                  <button class="like__button" type="button">
-                    <span class="visually-hidden">Отметить фото как понравившееся.</span>
-                  </button>
-                  <span class="like__counter">Нравится:</span>
-                  <span class="like__counter">215</span>
-                </div>
+              </div>
+              <p class="photo-card__text">
+                Прыгать или нет? Напишите в
+                комментарии свой совет и
+                смотрите прямую трансляцию в
+                перископе, задавайте свои вопросы!
+              </p>
+              <div class="photo-card__like like">
+                <button class="like__button" type="button">
+                  <span class="visually-hidden">Отметить фото как понравившееся.</span>
+                </button>
+                <p class="like__counter">Нравится:&nbsp;215</p>
               </div>
             </div>
           </li>
           <li class="catalog__item photo-card">
-            <img class="photo-card__img" src="https://via.placeholder.com/280x180" width="280" height="180" alt="Фото 2.">
+            <img class="photo-card__img" src="https://via.placeholder.com/280x180" width="280" height="180" alt="В центре кадра камера на штативе, на которую снимают стоящий легковой автомобиль белого цвета.">
             <div class="photo-card__description">
               <div class="photo-card__heading">
                 <p class="photo-card__user">Левон</p>
                 <p class="photo-card__date">
-                  (<span>5</span>
-                  <span>часов</span>
-                  назад)
+                  (5 часов назад)
                 </p>
-                <p class="photo-card__text">
-                  Вчера он на луну летал, сегодня
-                  в руки к нам попал.
-                </p>
-                <div class="photo-card__like like">
-                  <button class="like__button" type="button">
-                    <span class="visually-hidden">Отметить фото как понравившееся.</span>
-                  </button>
-                  <span class="like__counter">Нравится:</span>
-                  <span class="like__counter">356</span>
-                </div>
+              </div>
+              <p class="photo-card__text">
+                Вчера он на луну летал, сегодня
+                в руки к нам попал.
+              </p>
+              <div class="photo-card__like like">
+                <button class="like__button" type="button">
+                  <span class="visually-hidden">Отметить фото как понравившееся.</span>
+                </button>
+                <p class="like__counter">Нравится:&nbsp;356</p>
               </div>
             </div>
           </li>
           <li class="catalog__item photo-card">
-            <img class="photo-card__img" src="https://via.placeholder.com/280x180" width="280" height="180" alt="Фото 3.">
+            <img class="photo-card__img" src="https://via.placeholder.com/280x180" width="280" height="180" alt="Новая барабанная утсановка.">
             <div class="photo-card__description">
               <div class="photo-card__heading">
                 <p class="photo-card__user">Антон</p>
                 <p class="photo-card__date">
-                  (<span>12</span>
-                  <span>часов</span>
-                  назад)
+                  (12 часов назад)
                 </p>
-                <p class="photo-card__text">
-                  Соседи будут рады!
-                </p>
-                <div class="photo-card__like like">
-                  <button class="like__button" type="button">
-                    <span class="visually-hidden">Отметить фото как понравившееся.</span>
-                  </button>
-                  <span class="like__counter">Нравится:</span>
-                  <span class="like__counter">666</span>
-                </div>
+              </div>
+              <p class="photo-card__text">
+                Соседи будут рады!
+              </p>
+              <div class="photo-card__like like">
+                <button class="like__button" type="button">
+                  <span class="visually-hidden">Отметить фото как понравившееся.</span>
+                </button>
+                <p class="like__counter">Нравится:&nbsp;666</p>
               </div>
             </div>
           </li>
           <li class="catalog__item photo-card">
-            <img class="photo-card__img" src="https://via.placeholder.com/280x180" width="280" height="180" alt="Фото 4.">
+            <img class="photo-card__img" src="https://via.placeholder.com/280x180" width="280" height="180" alt="Стеклянный потолок здания, через который видно голубое небо.">
             <div class="photo-card__description">
               <div class="photo-card__heading">
                 <p class="photo-card__user">Борис</p>
                 <p class="photo-card__date">
-                  (<span>20</span>
-                  <span>часов</span>
-                  назад)
+                  (20 часов назад)
                 </p>
-                <p class="photo-card__text">
-                  Здесь могла быть ваша цитата
-                  о высоком и вечном.
-                </p>
-                <div class="photo-card__like like">
-                  <button class="like__button" type="button">
-                    <span class="visually-hidden">Отметить фото как понравившееся.</span>
-                  </button>
-                  <span class="like__counter">Нравится:</span>
-                  <span class="like__counter">215</span>
-                </div>
+              </div>
+              <p class="photo-card__text">
+                Здесь могла быть ваша цитата
+                о высоком и вечном.
+              </p>
+              <div class="photo-card__like like">
+                <button class="like__button" type="button">
+                  <span class="visually-hidden">Отметить фото как понравившееся.</span>
+                </button>
+                <p class="like__counter">Нравится:&nbsp;215</p>
               </div>
             </div>
           </li>
           <li class="catalog__item photo-card">
-            <img class="photo-card__img" src="https://via.placeholder.com/280x180" width="280" height="180" alt="Фото 5.">
+            <img class="photo-card__img" src="https://via.placeholder.com/280x180" width="280" height="180" alt="В поле под вывеской 'Кубанская бахча' стоит большой торговый шатёр с арбузами и дынями.">
             <div class="photo-card__description">
               <div class="photo-card__heading">
                 <p class="photo-card__user">Сергей</p>
                 <p class="photo-card__date">
-                  (<span>25</span>
-                  <span>часов</span>
-                  назад)
+                  (25 часов назад)
                 </p>
-                <p class="photo-card__text">
-                  Самая кубанская в мире!
-                </p>
-                <div class="photo-card__like like">
-                  <button class="like__button" type="button">
-                    <span class="visually-hidden">Отметить фото как понравившееся.</span>
-                  </button>
-                  <span class="like__counter">Нравится:</span>
-                  <span class="like__counter">4</span>
-                </div>
+              </div>
+              <p class="photo-card__text">
+                Самая кубанская в мире!
+              </p>
+              <div class="photo-card__like like">
+                <button class="like__button" type="button">
+                  <span class="visually-hidden">Отметить фото как понравившееся.</span>
+                </button>
+                <p class="like__counter">Нравится:&nbsp;4</p>
               </div>
             </div>
           </li>
           <li class="catalog__item photo-card">
-            <img class="photo-card__img" src="https://via.placeholder.com/280x180" width="280" height="180" alt="Фото 6.">
+            <img class="photo-card__img" src="https://via.placeholder.com/280x180" width="280" height="180" alt="Сэлфи на горе. В кадре голые ноги в легких ботинках, кругом зелень.">
             <div class="photo-card__description">
               <div class="photo-card__heading">
                 <p class="photo-card__user">Максим</p>
                 <p class="photo-card__date">
-                  (<span>40</span>
-                  <span>часов</span>
-                  назад)
+                  (40 часов назад)
                 </p>
-                <p class="photo-card__text">
-                  Где снег-то?
-                </p>
-                <div class="photo-card__like like">
-                  <button class="like__button" type="button">
-                    <span class="visually-hidden">Отметить фото как понравившееся.</span>
-                  </button>
-                  <span class="like__counter">Нравится:</span>
-                  <span class="like__counter">150</span>
-                </div>
+              </div>
+              <p class="photo-card__text">
+                Где снег-то?
+              </p>
+              <div class="photo-card__like like">
+                <button class="like__button" type="button">
+                  <span class="visually-hidden">Отметить фото как понравившееся.</span>
+                </button>
+                <p class="like__counter">Нравится:&nbsp;150</p>
               </div>
             </div>
           </li>
           <li class="catalog__item photo-card">
-            <img class="photo-card__img" src="https://via.placeholder.com/280x180" width="280" height="180" alt="Фото 7.">
+            <img class="photo-card__img" src="https://via.placeholder.com/280x180" width="280" height="180" alt="Крыло самолёта, летящего навстречу солнцу.">
             <div class="photo-card__description">
               <div class="photo-card__heading">
                 <p class="photo-card__user">Надежда</p>
                 <p class="photo-card__date">
-                  (<span>45</span>
-                  <span>часов</span>
-                  назад)
+                  (45 часов назад)
                 </p>
-                <p class="photo-card__text">
-                  Всем GM и взаимные лайки!
-                </p>
-                <div class="photo-card__like like">
-                  <button class="like__button" type="button">
-                    <span class="visually-hidden">Отметить фото как понравившееся.</span>
-                  </button>
-                  <span class="like__counter">Нравится:</span>
-                  <span class="like__counter">2560</span>
-                </div>
+              </div>
+              <p class="photo-card__text">
+                Всем GM и взаимные лайки!
+              </p>
+              <div class="photo-card__like like">
+                <button class="like__button" type="button">
+                  <span class="visually-hidden">Отметить фото как понравившееся.</span>
+                </button>
+                <p class="like__counter">Нравится:&nbsp;2560</p>
               </div>
             </div>
           </li>
@@ -211,55 +187,55 @@
       </section>
       <section class="upload-photo">
         <h2 class="visually-hidden">Запостить своё фото.</h2>
-        <h3 class="upload-photo__subtitle">
+        <p class="upload-photo__slogan">
           Затмите их всех!
           Выкладывайте все, что накопилось в телефоне!
-        </h3>
-        <div class="upload-photo__wrapper">
-          <img class="upload-photo__img" src="https://via.placeholder.com/280x374" width="280" height="374" alt="Фото для загрузки.">
+        </p>
+        <form class="upload-photo__form" method="post" action="https://echo.htmlacademy.ru">
+          <img class="upload-photo__img" src="https://via.placeholder.com/280x374" width="280" height="374" alt="Фото для загрузки. Зимняя дорога под снегом в ясный день.">
           <ul class="upload-photo__editing editing-tools">
             <li class="editing-tools__item">
-              <div class="editing-tools__item-icon editing-tools__item-icon--crop">
+              <button class="editing-tools__button editing-tools__button--crop">
+                <span class="visually-hidden">Кадрирование.</span>
                 <svg></svg>
-              </div>
-              <div class="editing-tools__item-range range">
-                <div class="range__bar">
-                  <button class="range__toggle" type="button">
-                    <span class="visually-hidden">Кадрировать изображение.</span>
-                  </button>
-                </div>
+              </button>
+              <div class="editing-tools__range range-bar">
+                <label for="crop-input-id" class="visually-hidden">
+                  Выбор области кадрирования.
+                </label>
+                <input class="range-bar__input" type="range" name="crop-input" id="crop-input-id">
               </div>
             </li>
             <li>
-              <div class="editing-tools__item-icon editing-tools__item-icon--fill">
+              <button class="editing-tools__button editing-tools__button--fill">
+                <span class="visually-hidden">Розовый фильтр.</span>
                 <svg></svg>
-              </div>
-              <div class="editing-tools__item-range range">
-                <div class="range__bar">
-                  <button class="range__toggle" type="button">
-                    <span class="visually-hidden">Использовать розовый фильтр.</span>
-                  </button>
-                </div>
+              </button>
+              <div class="editing-tools__range range-bar">
+                <label for="fill-input-id" class="visually-hidden">
+                  Изменить насыщенность фильтра.
+                </label>
+                <input class="range-bar__input" type="range" name="fill-input" id="fill-input-id">
               </div>
             </li>
             <li>
-              <div class="editing-tools__item-icon editing-tools__item-icon--contrast">
+              <button class="editing-tools__button editing-tools__button--contrast">
+                <span class="visually-hidden">Контраст.</span>
                 <svg></svg>
-              </div>
-              <div class="editing-tools__item-range range">
-                <div class="range__bar">
-                  <button class="range__toggle" type="button">
-                    <span class="visually-hidden">Изменить контраст.</span>
-                  </button>
-                </div>
+              </button>
+              <div class="editing-tools__range range-bar">
+                <label for="contrast-input-id" class="visually-hidden">
+                  Изменить контрастность изображения.
+                </label>
+                <input class="range-bar__input" type="range" name="contrast-input" id="contrast-input-id">
               </div>
             </li>
           </ul>
           <div class="upload-photo__button-wrapper">
             <button class="upload-photo__button upload-photo__button--post" type="submit">Запостить</button>
-            <button class="upload-photo__button upload-photo__button--cancel" type="button">Отмена</button>
+            <button class="upload-photo__button upload-photo__button--cancel" type="reset">Отмена</button>
           </div>
-        </div>
+        </form>
       </section>
     </main>
     <footer class="footer">
@@ -288,7 +264,8 @@
         </ul>
       </div>
       <div class="footer__copyright copyright">
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">Разработано
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          Разработано
           <span class="visually-hidden">HTML Academy.</span>
         </a>
       </div>
