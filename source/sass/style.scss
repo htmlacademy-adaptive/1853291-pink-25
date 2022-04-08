@@ -1,1 +1,39 @@
-// Начните писать стили здесь
+@import url(page.scss);
+
+@import url(./blocks/header/header.scss);
+@import url(./blocks/header/header-nav.scss);
+@import url(./blocks/header/nav-list.scss);
+
+@import url(./blocks/main-index/main-container.scss);
+@import url(./blocks/main-index/download-app.scss);
+@import url(./blocks/main-index/button-primary.scss);
+@import url(./blocks/main-index/product-features.scss);
+@import url(./blocks/main-index/feedback.scss);
+@import url(./blocks/main-index/feedback-item.scss);
+@import url(./blocks/main-index/slider-pagination.scss);
+@import url(./blocks/main-index/price.scss);
+@import url(./blocks/main-index/price-table.scss);
+@import url(./blocks/main-index/contacts.scss);
+@import url(./blocks/main-index/map-wrapper.scss);
+
+@import url(./blocks/footer/footer.scss);
+@import url(./blocks/footer/logo-wrapper.scss);
+@import url(./blocks/footer/socials-wrapper.scss);
+@import url(./blocks/footer/socials-list.scss);
+@import url(./blocks/footer/copyright.scss);
+
+@import url(./blocks/main-catalog/catalog.scss);
+@import url(./blocks/main-catalog/photo-card.scss);
+@import url(./blocks/main-catalog/like.scss);
+@import url(./blocks/main-catalog/upload-photo.scss);
+@import url(./blocks/main-catalog/editing-tools.scss);
+@import url(./blocks/main-catalog/range-bar.scss);
+
+@import url(./blocks/main-form/contest-form.scss);
+@import url(./blocks/main-form/form-group.scss);
+@import url(./blocks/main-form/field.scss);
+@import url(./blocks/main-form/form-achievement.scss);
+@import url(./blocks/main-form/checkbox.scss);
+@import url(./blocks/main-form/radio.scss);
+@import url(./blocks/main-form/form-button.scss);
+@import url(./blocks/main-form/modal.scss);
