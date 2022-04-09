@@ -1,0 +1,48 @@
+.product-features {
+  color: rgba(40, 54, 69, 1);
+
+  .product-features__subtitle {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+
+    padding: 46px 20px;
+
+      p {
+        margin: 0;
+        padding: 0;
+      }
+  }
+
+  .product-features__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    background: rgba(242, 242, 242, 1);
+    text-align: center;
+
+  }
+
+  .product-features__item {
+
+    padding-bottom: 43px;
+
+      h3 {
+        margin: 0;
+        padding: 0;
+
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 24px;
+      }
+
+      .product-features__description {
+        margin: 0;
+        padding: 0;
+        font-size: 14px;
+        line-height: 24px;
+      }
+  }
+}
