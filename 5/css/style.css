@@ -1,0 +1,475 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/opensans.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/opensansbold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/opensanslight.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+}
+body {
+  font-family: "Open Sans";
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
+
+.slogan {
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  color: #283645;
+}
+
+.header {
+  padding: 23px 20px 0 20px;
+  background-color: #283645;
+}
+
+.nav-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+  text-transform: uppercase;
+}
+.nav-list li {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: center;
+}
+.nav-list li a {
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.intro {
+  background-image: url("../img/download-app/back-tablet.png");
+  background-color: #ffffff;
+}
+
+.intro__title {
+  margin: 0;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 33px;
+  color: #ffffff;
+}
+
+.download-app {
+  padding-top: 34px;
+}
+
+.download-app__slogan {
+  margin: 0 0 34px 0;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.download-app__wrapper {
+  padding-top: 28px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 38px;
+  background-color: #283645;
+}
+
+.download-app__description {
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.download-app__list {
+  display: flex;
+  align-items: center;
+  margin-top: 32px;
+  margin-bottom: 28px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.download-app__item {
+  margin-right: 35px;
+}
+
+.download-app__item:last-child {
+  margin-right: 0px;
+}
+
+.download-app__link {
+  display: block;
+  background-color: #283645;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.download-app__link--apple {
+  width: 47px;
+  height: 56px;
+  background-image: url("../img/platforms/apple-logo.svg");
+}
+
+.download-app__link--android {
+  width: 43px;
+  height: 47px;
+  background-image: url("../img/platforms/android-logo.svg");
+}
+
+.download-app__link--windows {
+  width: 44px;
+  height: 41px;
+  background-image: url("../img/platforms/windows-logo.svg");
+}
+
+.product-features {
+  color: #283645;
+}
+
+.product-features__subtitle {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  padding: 46px 20px;
+}
+.product-features__subtitle p {
+  margin: 0;
+  padding: 0;
+}
+
+.product-features__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  background: #f2f2f2;
+  text-align: center;
+}
+
+.product-features__item {
+  padding-bottom: 43px;
+}
+.product-features__item h3 {
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.product-features__description {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.feedback__pagination {
+  padding: 44px;
+  text-align: center;
+}
+
+.feedback-item {
+  text-align: center;
+}
+.feedback-item .feedback-item__author {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+}
+.feedback-item .feedback-item__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  color: #283645;
+}
+
+.price__pagination {
+  padding: 50px;
+  text-align: center;
+  background-color: #f2f2f2;
+}
+
+.price-table__category {
+  padding: 25px 67px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  color: #ffffff;
+  background-color: #283645;
+  text-transform: uppercase;
+}
+.price-table__category p {
+  padding: 0;
+  margin: 15px 0 0 0;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.price-table__category--none {
+  background-color: transparent;
+}
+
+.price-table__option {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #283645;
+  background-color: #ffffff;
+  white-space: nowrap;
+}
+
+.price-table__option--yes {
+  width: 31px;
+  height: 21px;
+  background-image: url("../img/price-table/yes.svg");
+  background-color: #ffffff;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.price-table__option--no {
+  width: 27px;
+  height: 27px;
+  background-image: url("../img/price-table/no.svg");
+  background-color: #ffffff;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.contacts {
+  padding-top: 50px;
+}
+
+.contacts__subtitle {
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #283645;
+  text-align: center;
+}
+
+.contacts__list {
+  margin: 0;
+  text-align: center;
+}
+.contacts__list dt {
+  margin-top: 35px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: #283645;
+}
+.contacts__list dd {
+  margin: 0;
+}
+.contacts__list dd a {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 33px;
+  color: #d22856;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.map-wrapper {
+  margin-top: 40px;
+}
+
+.footer {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.footer__logo {
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.copyright__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #283645;
+  text-decoration: none;
+  cursor: pointer;
+}
+.copyright__link svg {
+  margin-left: 15px;
+}
+
+.catalog {
+  padding: 50px 20px;
+}
+
+.catalog__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.photo-card {
+  background-color: #f2f2f2;
+}
+
+.photo-card__description {
+  padding: 25px 17px;
+}
+
+.photo-card__heading {
+  display: flex;
+  align-items: center;
+}
+
+.photo-card__user {
+  margin: 0 3px 0 0;
+  padding: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  color: #283645;
+}
+
+.photo-card__date {
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 24px;
+  color: #283645;
+  text-transform: uppercase;
+}
+
+.photo-card__text {
+  margin: 14px 0 0 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #283645;
+}
+
+.like {
+  margin-top: 27px;
+  display: flex;
+  align-items: center;
+}
+
+.like__counter {
+  margin: 0 0 0 18px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+  color: #d22856;
+  text-transform: uppercase;
+}
+
+.upload-photo__form {
+  margin: 0;
+  padding: 20px 20px 40px 20px;
+  background-color: #f2f2f2;
+}
+
+.editing-tools {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.form__slogan {
+  padding: 54px 20px 13px 20px;
+}
+
+.contest-form {
+  margin-bottom: 26px;
+}
+
+.field__label,
+.form-achievement__title,
+.form-app__title {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  color: #d22856;
+  text-transform: uppercase;
+}
+
+.checkbox__text,
+.radio__text,
+input::placeholder,
+textarea::placeholder {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #283645;
+}
+
+.form-group {
+  padding: 43px 22px;
+}
+
+.form-achievement,
+.form-app {
+  background-color: #f2f2f2;
+}
+
+.modal {
+  padding: 44px 22px 52px 22px;
+}
+
+.modal__title {
+  margin: 0 0 37px 0;
+  padding: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.modal__description {
+  margin: 0 0 50px 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #283645;
+}
+/*# sourceMappingURL=style.css.map */
