@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
-  background: rgba(40, 54, 69, 1);
+  background: $font-color-primary;
 
 
 
@@ -15,7 +15,7 @@
       text-align: center;
 
       a {
-        color: #ffffff;
+        color: $font-color-secondary;
         text-decoration: none;
         cursor: pointer;
       }

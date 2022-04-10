@@ -1,1 +1,48 @@
+.contacts {
+  padding-top: 50px;
+}
 
+.contacts__subtitle {
+  margin: 0;
+  padding: 0;
+
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: $font-color-primary;
+  text-align: center;
+}
+
+.contacts__list {
+    margin: 0;
+    text-align: center;
+
+    dt {
+    margin-top: 35px;
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    color: $font-color-primary;
+
+   }
+
+   dd   {
+    margin: 0;
+
+      a {
+      font-weight: 300;
+      font-size: 24px;
+      line-height: 33px;
+      color: $font-color-accent;
+      text-decoration: none;
+      cursor: pointer;
+
+      }
+
+   }
+}
+
+.map-wrapper {
+  margin-top: 40px;
+}

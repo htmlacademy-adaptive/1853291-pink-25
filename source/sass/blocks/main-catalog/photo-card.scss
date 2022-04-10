@@ -1,0 +1,60 @@
+.photo-card {
+  background-color: #f2f2f2;
+
+}
+
+.photo-card__description {
+  padding: 25px 17px;
+}
+
+.photo-card__heading {
+  display: flex;
+  align-items: center;
+}
+
+.photo-card__user {
+  margin: 0 3px 0 0;
+  padding: 0;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  color: $font-color-primary;
+}
+
+.photo-card__date {
+  margin: 0;
+  padding: 0;
+
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 24px;
+  color: $font-color-primary;
+  text-transform: uppercase;
+}
+
+.photo-card__text {
+  margin: 14px 0 0 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: $font-color-primary;
+}
+
+.like {
+  margin-top: 27px;
+  display: flex;
+  align-items: center;
+
+}
+
+.like__counter {
+  margin: 0 0 0 18px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+  color: $font-color-accent;
+  text-transform: uppercase;
+}
+
