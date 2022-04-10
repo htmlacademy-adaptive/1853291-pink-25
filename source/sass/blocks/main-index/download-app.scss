@@ -1,38 +1,25 @@
 .download-app {
   padding-top: 34px;
 
+}
 
-  .download-app__slogan {
-    margin: 0 0 34px 0;
+.download-app__slogan {
+  margin: 0 0 34px 0;
 
-    font-weight: 300;
-    font-size: 24px;
-    line-height: 29px;
-    color: $font-color-secondary;
-    text-align: center;
-  }
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: $font-color-secondary;
+  text-align: center;
+}
 
-  .download-app__wrapper {
-    padding-top: 28px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 38px;
+.download-app__wrapper {
+  padding-top: 28px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 38px;
 
-
-    background-color: $font-color-primary;
-
-  }
-
-  .download-app__list {
-    display: flex;
-    align-items: center;
-    margin-top: 32px;
-    margin-bottom: 28px;
-    padding: 0;
-    list-style-type: none;
-
-
-  }
+  background-color: $font-color-primary;
 
 }
 
@@ -44,6 +31,16 @@
   font-size: 14px;
   line-height: 24px;
   color: $font-color-secondary;
+
+}
+
+.download-app__list {
+  display: flex;
+  align-items: center;
+  margin-top: 32px;
+  margin-bottom: 28px;
+  padding: 0;
+  list-style-type: none;
 
 }
 

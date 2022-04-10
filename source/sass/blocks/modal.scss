@@ -1,0 +1,23 @@
+.modal {
+  padding: 44px 22px 52px 22px;
+}
+
+
+.modal__title {
+  margin: 0 0 37px 0;
+  padding: 0;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.modal__description {
+  margin: 0 0 50px 0;
+  padding: 0;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: $font-color-primary;
+}

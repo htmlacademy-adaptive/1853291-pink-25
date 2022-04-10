@@ -1,0 +1,30 @@
+.form__slogan {
+  padding: 54px 20px 13px 20px;
+}
+
+.contest-form {
+  margin-bottom: 26px;
+
+}
+
+.field__label,
+.form-achievement__title,
+.form-app__title {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  color: $font-color-accent;
+  text-transform: uppercase;
+}
+
+.checkbox__text,
+.radio__text,
+input::placeholder,
+textarea::placeholder {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: $font-color-primary;
+
+}
