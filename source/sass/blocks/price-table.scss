@@ -4,21 +4,18 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
-
   color: $font-color-secondary;
   background-color: $font-color-primary;
   text-transform: uppercase;
 
-
   p {
-      padding: 0;
-      margin: 15px 0 0 0;
+    padding: 0;
+    margin: 15px 0 0 0;
 
-      font-weight: 300;
-      font-size: 24px;
-      line-height: 30px;
-    }
-
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 30px;
+  }
 }
 
 .price-table__category--none {
@@ -32,22 +29,14 @@
   color: $font-color-primary;
   background-color: $font-color-secondary;
   white-space: nowrap;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .price-table__option--yes {
-  width: 31px;
-  height: 21px;
   background-image: url("../img/price-table/yes.svg");
-  background-color: $font-color-secondary;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 .price-table__option--no {
-  width: 27px;
-  height: 27px;
   background-image: url("../img/price-table/no.svg");
-  background-color: $font-color-secondary;
-  background-position: center;
-  background-repeat: no-repeat;
 }

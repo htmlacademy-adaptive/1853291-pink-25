@@ -1,6 +1,5 @@
 .photo-card {
   background-color: #f2f2f2;
-
 }
 
 .photo-card__description {
@@ -42,19 +41,6 @@
   color: $font-color-primary;
 }
 
-.like {
+.photo-card__like {
   margin-top: 27px;
-  display: flex;
-  align-items: center;
-
 }
-
-.like__counter {
-  margin: 0 0 0 18px;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 24px;
-  color: $font-color-accent;
-  text-transform: uppercase;
-}
-

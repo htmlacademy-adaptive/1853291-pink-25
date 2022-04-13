@@ -1,42 +1,27 @@
-@import "fonts.scss";
-@import "common.scss";
-@import "./page.scss";
-
-@import "./blocks/header/header.scss";
-@import "./blocks/header/header-nav.scss";
-@import "./blocks/header/nav-list.scss";
-
+@import "./fonts.scss";
+@import "./blocks/variables.scss";
+@import "./common.scss";
+@import "./blocks/page.scss";
+@import "./blocks/header.scss";
+@import "./blocks/nav-list.scss";
 @import "./blocks/intro.scss";
 @import "./blocks/main-container.scss";
-@import "./blocks/main-index/download-app.scss";
-@import "./blocks/main-index/button-primary.scss";
-@import "./blocks/main-index/product-features.scss";
-@import "./blocks/main-index/feedback.scss";
-@import "./blocks/main-index/feedback-item.scss";
-@import "./blocks/main-index/slider-pagination.scss";
-@import "./blocks/main-index/price.scss";
-@import "./blocks/main-index/price-table.scss";
-@import "./blocks/main-index/contacts.scss";
-@import "./blocks/main-index/map-wrapper.scss";
-
-@import "./blocks/footer/footer.scss";
-@import "./blocks/footer/socials-wrapper.scss";
-@import "./blocks/footer/socials-list.scss";
-@import "./blocks/footer/copyright.scss";
-
-@import "./blocks/main-catalog/catalog.scss";
-@import "./blocks/main-catalog/photo-card.scss";
-@import "./blocks/main-catalog/like.scss";
-@import "./blocks/main-catalog/upload-photo.scss";
-@import "./blocks/main-catalog/editing-tools.scss";
-@import "./blocks/main-catalog/range-bar.scss";
-
-@import "./blocks/main-form/contest-form.scss";
-@import "./blocks/main-form/form-group.scss";
-@import "./blocks/main-form/field.scss";
-@import "./blocks/main-form/checkbox.scss";
-@import "./blocks/main-form/radio.scss";
-@import "./blocks/main-form/form-button.scss";
-@import "./blocks/main-form/modal.scss";
-
+@import "./blocks/download-app.scss";
+@import "./blocks/product-features.scss";
+@import "./blocks/feedback.scss";
+@import "./blocks/feedback-item.scss";
+@import "./blocks/price.scss";
+@import "./blocks/price-table.scss";
+@import "./blocks/contacts.scss";
+@import "./blocks/footer.scss";
+@import "./blocks/copyright.scss";
+@import "./blocks/catalog.scss";
+@import "./blocks/photo-card.scss";
+@import "./blocks/like.scss";
+@import "./blocks/upload-photo.scss";
+@import "./blocks/editing-tools.scss";
+@import "./blocks/field.scss";
+@import "./blocks/form-label.scss";
+@import "./blocks/form-input-font.scss";
 @import "./blocks/modal.scss";
+@import "./blocks/slogan.scss";

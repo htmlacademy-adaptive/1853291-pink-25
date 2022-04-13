@@ -1,0 +1,14 @@
+.like {
+  display: flex;
+  align-items: center;
+}
+
+.like__counter {
+  margin: 0 0 0 18px;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+  color: $font-color-accent;
+  text-transform: uppercase;
+}

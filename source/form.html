@@ -34,7 +34,7 @@
       <div class="intro">
         <h1 class="intro__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
       </div>
-      <p class="form__slogan slogan">
+      <p class="intro__slogan slogan">
         Поделитесь своей историей и получите
         шанс выиграть ценный приз — 1000
         миль на вашу бонусную карту!
@@ -43,55 +43,55 @@
         <fieldset class="contest-form__group form-group">
           <legend class="visually-hidden">Данные пользователя</legend>
           <div class="form-group__field field">
-            <label for="lastname-id" class="field__label">Фамилия:</label>
+            <label for="lastname-id" class="field__label form-label">Фамилия:</label>
             <input class="field__input" type="text" name="lastname" id="lastname-id" placeholder="Укажите фамилию *" required>
           </div>
           <div class="form-group__field field">
-            <label for="firstname-id" class="field__label">Имя:</label>
+            <label for="firstname-id" class="field__label form-label">Имя:</label>
             <input class="field__input" type="text" name="firstname" id="firstname-id" placeholder="Укажите имя *" required>
           </div>
           <div class="form-group__field field">
-            <label for="middlename-id" class="field__label">Отчество:</label>
+            <label for="middlename-id" class="field__label form-label">Отчество:</label>
             <input class="field__input" type="text" name="middlename" id="middlename-id" placeholder="Ну и отчество тоже">
           </div>
         </fieldset>
         <fieldset class="contest-form__group form-achievement">
-          <legend class="form-achievement__title">Ваши безбашенные достижения в путешествии</legend>
+          <legend class="form-achievement__title form-label">Ваши безбашенные достижения в путешествии</legend>
           <ul class="form-achievement__list">
             <li class="form-achievement__item">
               <label class="form-achievement__field checkbox">
                 <input class="checkbox__input" type="checkbox" name="achivment" value="selfie" checked>
-                <span class="checkbox__text">Сделал селфи с акулой</span>
+                <span class="checkbox__text form-input-font">Сделал селфи с акулой</span>
               </label>
             </li>
             <li class="form-achievement__item">
               <label class="form-achievement__field checkbox">
                 <input class="checkbox__input" type="checkbox" name="achivment" value="sunburn" checked>
-                <span class="checkbox__text">Обгорел на пляже</span>
+                <span class="checkbox__text form-input-font">Обгорел на пляже</span>
               </label>
             </li>
             <li class="form-achievement__item">
               <label class="form-achievement__field checkbox">
                 <input class="checkbox__input" type="checkbox" name="achivment" value="celebrity">
-                <span class="checkbox__text">Видел Чака Норриса</span>
+                <span class="checkbox__text form-input-font">Видел Чака Норриса</span>
               </label>
             </li>
             <li class="form-achievement__item">
               <label class="form-achievement__field checkbox">
                 <input class="checkbox__input" type="checkbox" name="achivment" value="souvenir">
-                <span class="checkbox__text">Накупил сувениров</span>
+                <span class="checkbox__text form-input-font">Накупил сувениров</span>
               </label>
             </li>
             <li class="form-achievement__item">
               <label class="form-achievement__field checkbox">
                 <input class="checkbox__input" type="checkbox" name="achivment" value="tower" checked>
-                <span class="checkbox__text">Удержал башню</span>
+                <span class="checkbox__text form-input-font">Удержал башню</span>
               </label>
             </li>
             <li class="form-achievement__item">
               <label class="form-achievement__field checkbox">
                 <input class="checkbox__input" type="checkbox" name="achivment" value="hotel">
-                <span class="checkbox__text">Разгромил отель</span>
+                <span class="checkbox__text form-input-font">Разгромил отель</span>
               </label>
             </li>
           </ul>
@@ -99,16 +99,16 @@
         <fieldset class="contest-form__group form-group">
           <legend class="visually-hidden">Контактная информация</legend>
           <div class="form-group__field field">
-            <label for="tel-id" class="field__label">Номер телефона</label>
+            <label for="tel-id" class="field__label form-label">Номер телефона</label>
             <input class="field__input" type="tel" name="tel" id="tel-id" placeholder="Номер, пожалуйста">
           </div>
           <div class="form-group__field field">
-            <label for="email-id" class="field__label">Адрес почты</label>
+            <label for="email-id" class="field__label form-label">Адрес почты</label>
             <input class="field__input" type="email" name="email" id="email-id" placeholder="Введите почту *" required>
           </div>
         </fieldset>
         <fieldset class="contest-form__group form-app">
-          <legend class="form-app__title">С каким приложением путешествовали?</legend>
+          <legend class="form-app__title form-label">С каким приложением путешествовали?</legend>
           <ul class="form-app__list">
             <li class="form-app__item">
               <label class="form-app__field radio">
@@ -131,7 +131,7 @@
           </ul>
         </fieldset>
         <div class="contest-form__group field">
-          <label for="feedback-text-id" class="field__label">Опишите свои эмоции</label>
+          <label for="feedback-text-id" class="field__label form-label">Опишите свои эмоции</label>
           <textarea class="field__input" name="feedback-text" id="feedback-text-id" rows="5" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </div>
         <button class="contest-form__button form-button" type="submit">Отправить форму</button>
