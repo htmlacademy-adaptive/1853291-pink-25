@@ -7,27 +7,27 @@
   color: $font-color-secondary;
   background-color: $font-color-primary;
   text-transform: uppercase;
-
-  p {
-    padding: 0;
-    margin: 15px 0 0 0;
-
-    font-weight: 300;
-    font-size: 24px;
-    line-height: 30px;
-  }
 }
 
 .price-table__category--none {
   background-color: transparent;
 }
 
+.price-table__cost {
+  padding: 0;
+  margin: 15px 0 0 0;
+
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 30px;
+}
+
 .price-table__option {
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
-  color: $font-color-primary;
-  background-color: $font-color-secondary;
+  color: $color-primary;
+  background-color: $color-white;
   white-space: nowrap;
   background-position: center;
   background-repeat: no-repeat;

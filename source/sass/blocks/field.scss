@@ -1,7 +1,7 @@
-.field__input::placeholder {
-  font-family: "Open Sans", "Helvetica", sans-serif;
+.field__input {
+  font-family: inherit;
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
-  color: $font-color-primary;
+  color: $color-primary;
 }

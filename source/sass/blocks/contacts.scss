@@ -9,17 +9,17 @@
   font-weight: 300;
   font-size: 24px;
   line-height: 29px;
-  color: $font-color-primary;
+  color: $color-primary;
   text-align: center;
 }
 
 .contacts__list {
   margin: 0;
   text-align: center;
+}
 
-  dd {
-    margin: 0;
-  }
+.contacts__info {
+  margin: 0;
 }
 
 .contacts__item-title {
@@ -28,17 +28,17 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 25px;
-  color: $font-color-primary;
+  color: $color-primary;
 }
 
 .contacts__link {
   font-weight: 300;
   font-size: 24px;
   line-height: 33px;
-  color: $font-color-accent;
+  color: $color-accent;
   text-decoration: none;
 }
 
-.map-wrapper {
+.contacts__map {
   margin-top: 40px;
 }
