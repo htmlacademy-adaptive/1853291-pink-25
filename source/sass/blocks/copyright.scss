@@ -1,0 +1,16 @@
+.copyright__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: $color-primary;
+  text-decoration: none;
+  cursor: pointer;
+
+  svg {
+    margin-left: 15px;
+  }
+}
