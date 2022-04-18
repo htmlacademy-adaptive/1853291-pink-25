@@ -1,5 +1,17 @@
 .contacts {
   padding-top: 50px;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    width: 660px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+  }
 }
 
 .contacts__subtitle {
@@ -11,11 +23,65 @@
   line-height: 29px;
   color: $color-primary;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 40px;
+    line-height: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 50px;
+    line-height: 68px;
+  }
 }
 
 .contacts__list {
-  margin: 0;
+  margin: 0 auto;
   text-align: center;
+  padding-left: 40px;
+  padding-right: 40px;
+
+  @media (min-width: $tablet-width) {
+    width: 544px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 863px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+}
+
+.contacts__item {
+  @media (min-width: $desktop-width) {
+    width: 300px;
+  }
+}
+
+.contacts__item--phone {
+  @media (min-width: $desktop-width) {
+    order: 1;
+  }
+}
+
+.contacts__item--mail {
+  @media (min-width: $desktop-width) {
+    order: 3;
+  }
+}
+
+.contacts__item--adress {
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 2;
+  }
 }
 
 .contacts__info {
@@ -32,6 +98,8 @@
 }
 
 .contacts__link {
+  display: block;
+
   font-weight: 300;
   font-size: 24px;
   line-height: 33px;

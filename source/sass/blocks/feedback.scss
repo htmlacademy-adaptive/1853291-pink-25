@@ -1,4 +1,23 @@
+.feedback {
+  padding: 50px 20px 60px 20px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.feedback__item {
+  @media (min-width: $tablet-width) {
+    order: 1;
+  }
+}
+
 .feedback__pagination {
   padding: 44px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    order: 4;
+  }
 }
