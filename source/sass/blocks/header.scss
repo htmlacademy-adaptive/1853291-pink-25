@@ -1,6 +1,13 @@
 .header {
-  padding: 23px 20px 0 20px;
   background-color: $color-primary;
+
+  @media (min-width: $desktop-width) {
+    padding-left: 130px;
+    padding-right: 130px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .header-nav__list {

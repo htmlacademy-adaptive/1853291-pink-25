@@ -1,0 +1,11 @@
+.header-nav {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-nav__toggle {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}

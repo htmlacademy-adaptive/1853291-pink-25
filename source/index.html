@@ -2,18 +2,20 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body class="page__body">
     <header class="header">
-      <a class="header__logo logo" href="index.html">
-        <img src="img/logo.svg" width="74" height="23" alt="Логотип Пинк.">
-      </a>
-      <nav class="header-nav">
+      <div class="header-nav">
+        <a class="header__logo logo" href="index.html">
+          <img src="img/logo.svg" width="74" height="23" alt="Логотип Пинк.">
+        </a>
         <button class="header-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню.</span>
         </button>
+      </div>
         <ul class="header-nav__list nav-list">
           <li class="nav-list__item nav-list__item--current">
             <a class="nav-list__link" href="index.html">Главная</a>
@@ -32,10 +34,9 @@
     </header>
     <main class="main-container">
       <h1 class="visually-hidden">Пинк - мобильное приложение для раскрашивания серых будней в розовый цвет</h1>
-      <section class="download-app intro">
+      <section class="download-app">
         <h2 class="visually-hidden">Скачать приложение на своё устройство.</h2>
-        <p class="intro__title">Взгляните на жизнь иначе!</p>
-        <img src="https://via.placeholder.com/320x287" width="320" height="287" alt="Телефон, на котором загружено приложение 'Пинк' в ладони.">
+        <p class="download-app__slogan">Взгляните на жизнь иначе!</p>
         <div class="download-app__wrapper">
           <a class="download-app__link button-primary" href="#">Скачать приложение</a>
           <ul class="download-app__list">
@@ -78,6 +79,7 @@
             <p class="product-features__description">
               Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
             </p>
+            <img class="product-features__img product-features__img--1" src="https://via.placeholder.com/157x280" width="157" height="280" alt="На экране телефона черно-белая фотография двух мусорных баков на фоне гаражей.">
           </li>
           <li class="product-features__item">
             <h3 class="product-features__title">
@@ -86,6 +88,7 @@
             <p class="product-features__description">
               Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
             </p>
+            <img class="product-features__img product-features__img--2" src="https://via.placeholder.com/157x280" width="157" height="280" alt="На экране телефона фотография двух мусорных баков на фоне гаражей с использованием розового фильтра из приложения Пинк.">
           </li>
           <li class="product-features__item">
             <h3 class="product-features__title">

@@ -1,9 +1,17 @@
 .download-app {
   padding-top: 34px;
+  background-color: $color-primary;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 74px;
+    padding-left: 20px;
+  }
 }
 
 .download-app__slogan {
   margin: 0 0 34px 0;
+  padding-left: 20px;
+  padding-right: 20px;
 
   font-weight: 300;
   font-size: 24px;
@@ -13,12 +21,11 @@
 }
 
 .download-app__wrapper {
-  padding-top: 28px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 38px;
+  width: 280px;
 
-  background-color: $color-primary;
+  @media (min-width: $tablet-width) {
+    width: 300px;
+  }
 }
 
 .download-app__description {
@@ -28,12 +35,13 @@
   font-weight: 300;
   font-size: 14px;
   line-height: 24px;
-  color: $font-color-secondary;
+  color: $color-white;
 }
 
 .download-app__list {
   display: flex;
   align-items: center;
+  justify-content: center;
   margin-top: 32px;
   margin-bottom: 28px;
   padding: 0;
@@ -52,7 +60,7 @@
   display: block;
   width: 56px;
   height: 56px;
-  background-color: $font-color-primary;
+  background-color: $color-primary;
   background-position: center;
   background-repeat: no-repeat;
 }
