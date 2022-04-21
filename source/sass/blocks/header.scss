@@ -2,14 +2,31 @@
   background-color: $color-primary;
 
   @media (min-width: $desktop-width) {
-    padding-left: 130px;
-    padding-right: 130px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.header__menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__logo {
+  display: block;
+  padding: 20px;
+}
+
+.header__toggle {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.header__nav {
+  @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-}
-
-.header-nav__list {
-  margin: 0;
 }

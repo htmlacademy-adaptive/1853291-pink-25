@@ -1,33 +1,32 @@
 .side-effect {
-  @media (max-width: 659px) {
+  @media (max-width: $mobile-width-only) {
     display: none;
   }
 
   @media (min-width: $tablet-width) {
-    padding: 54px 20px 0 20px;
-    display: flex;
-    justify-content: flex-end;
+    width: auto;
+    display: grid;
+    grid-template-columns: 240px 380px;
+    justify-content: center;
     background-color: $color-white;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0;
-    height: 430px;
-    align-items: center;
-    justify-content: center;
+    grid-template-columns: 300px 640px;
     background-color: $color-gray;
   }
 }
 
-.side-effect__wrapper {
-  width: 300px;
+.side-effect__container {
+  padding: 102px 0 20px 72px;
+  grid-column-start: 2;
 
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
 
   @media (min-width: $desktop-width) {
-    width: 530px;
+    padding: 115px 0 120px 72px;
 
     font-size: 18px;
     line-height: 30px;
@@ -36,7 +35,6 @@
 
 .side-effect__title {
   @media (min-width: $tablet-width) {
-    width: 170px;
     margin: 0 0 24px 0;
 
     font-weight: 700;
@@ -45,7 +43,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 300px;
     font-size: 30px;
     line-height: 30px;
   }

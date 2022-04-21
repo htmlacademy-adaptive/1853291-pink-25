@@ -1,10 +1,9 @@
-.header-nav {
-  padding: 20px;
+.header__menu {
   display: flex;
   justify-content: space-between;
 }
 
-.header-nav__toggle {
+.header__menu__toggle {
   @media (min-width: $desktop-width) {
     display: none;
   }

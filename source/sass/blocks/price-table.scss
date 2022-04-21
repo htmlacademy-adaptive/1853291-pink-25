@@ -11,6 +11,10 @@
 
 .price-table__category--none {
   background-color: transparent;
+
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
 }
 
 .price-table__cost {
@@ -33,10 +37,26 @@
   background-repeat: no-repeat;
 }
 
+.price-table__option--name {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+}
+
 .price-table__option--yes {
   background-image: url("../img/price-table/yes.svg");
+
+  @media (max-width: $mobile-width-only) {
+    width: 280px;
+    height: 60px;
+  }
 }
 
 .price-table__option--no {
   background-image: url("../img/price-table/no.svg");
+
+  @media (max-width: $mobile-width-only) {
+    width: 280px;
+    height: 60px;
+  }
 }

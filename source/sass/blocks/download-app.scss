@@ -1,23 +1,25 @@
 .download-app {
-  padding-top: 34px;
+
   background-color: $color-primary;
 }
 
 .download-app__container {
-  width: 280px;
-  padding: 20px;
+  padding-top: 29px;
+  padding-bottom: 38px;
+  display: grid;
+  grid-template-columns: 280px;
+  justify-content: center;
 
   @media (min-width: $tablet-width) {
-    width: 300px;
     padding-top: 103px;
     padding-bottom: 119px;
-    padding-left: 20px;
+    grid-template-columns: 300px 320px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 114px;
     padding-bottom: 130px;
-    padding-left: 130px;
+    grid-template-columns: 300px 640px;
   }
 }
 
