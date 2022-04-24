@@ -8,7 +8,7 @@
   </head>
   <body class="page__body">
     <header class="header">
-      <div class="header__nav container">
+      <nav class="header__nav">
         <div class="header__menu">
           <a class="header__logo logo" href="index.html">
             <img src="img/logo.svg" width="74" height="23" alt="Логотип Пинк.">
@@ -31,7 +31,7 @@
             <a class="nav-list__link" href="https://htmlacademy.ru/">HTML Academy</a>
           </li>
         </ul>
-      </div>
+      </nav>
     </header>
     <main class="main-container">
       <h1 class="visually-hidden">Пинк - мобильное приложение для раскрашивания серых будней в розовый цвет</h1>
@@ -95,7 +95,7 @@
             <h3 class="product-features__title">
               Заводит новых друзей
             </h3>
-            <p class="product-features__description product-features__description--last">
+            <p class="product-features__description">
               Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
             </p>
           </li>
@@ -133,65 +133,67 @@
           </div>
         </div>
       </section>
-      <section class="price container">
+      <section class="price">
         <h2 class="visually-hidden">Тарифы и доступные опции.</h2>
-        <table class="price__table price-table">
-          <thead>
-            <tr>
-              <th class="price-table__category price-table__category--none"></th>
-              <th class="price-table__category">
-                База
-                <p class="price-table__cost">1,99&nbsp;USD</p>
-              </th>
-              <th class="price-table__category price-table__category--special">
-                Стандарт
-                <p class="price-table__cost">3,99&nbsp;USD</p>
-              </th>
-              <th class="price-table__category">
-                Анлим
-                <p class="price-table__cost">9,99&nbsp;USD</p>
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th class="price-table__option price-table__option--name">Розовый фильтр</th>
-              <td class="price-table__option price-table__option--yes">
-                <span class="visually-hidden">Доступная опция</span>
-              </td>
-              <td class="price-table__option price-table__option--yes">
-                <span class="visually-hidden">Доступная опция</span>
-              </td>
-              <td class="price-table__option price-table__option--yes">
-                <span class="visually-hidden">Доступная опция</span>
-              </td>
-            </tr>
-            <tr>
-              <th class="price-table__option price-table__option--name">Смайлики</th>
-              <td class="price-table__option price-table__option--no">
-                <span class="visually-hidden">Недоступная опция</span>
-              </td>
-              <td class="price-table__option price-table__option--yes">
-                <span class="visually-hidden">Доступная опция</span>
-              </td>
-              <td class="price-table__option price-table__option--yes">
-                <span class="visually-hidden">Доступная опция</span>
-              </td>
-            </tr>
-            <tr>
-              <th class="price-table__option price-table__option--name">Комментарии</th>
-              <td class="price-table__option price-table__option--no">
-                <span class="visually-hidden">Недоступная опция</span>
-              </td>
-              <td class="price-table__option price-table__option--no">
-                <span class="visually-hidden">Недоступная опция</span>
-              </td>
-              <td class="price-table__option price-table__option--yes">
-                <span class="visually-hidden">Доступная опция</span>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+        <div class="price__container">
+          <table class="price__table price-table">
+            <thead>
+              <tr>
+                <th class="price-table__category price-table__category--none"></th>
+                <th class="price-table__category">
+                  База
+                  <p class="price-table__cost">1,99&nbsp;USD</p>
+                </th>
+                <th class="price-table__category price-table__category--special">
+                  Стандарт
+                  <p class="price-table__cost">3,99&nbsp;USD</p>
+                </th>
+                <th class="price-table__category">
+                  Анлим
+                  <p class="price-table__cost">9,99&nbsp;USD</p>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="price-table__option price-table__option--name">Розовый фильтр</th>
+                <td class="price-table__option price-table__option--yes">
+                  <span class="visually-hidden">Доступная опция</span>
+                </td>
+                <td class="price-table__option price-table__option--yes">
+                  <span class="visually-hidden">Доступная опция</span>
+                </td>
+                <td class="price-table__option price-table__option--yes">
+                  <span class="visually-hidden">Доступная опция</span>
+                </td>
+              </tr>
+              <tr>
+                <th class="price-table__option price-table__option--name">Смайлики</th>
+                <td class="price-table__option price-table__option--no">
+                  <span class="visually-hidden">Недоступная опция</span>
+                </td>
+                <td class="price-table__option price-table__option--yes">
+                  <span class="visually-hidden">Доступная опция</span>
+                </td>
+                <td class="price-table__option price-table__option--yes">
+                  <span class="visually-hidden">Доступная опция</span>
+                </td>
+              </tr>
+              <tr>
+                <th class="price-table__option price-table__option--name">Комментарии</th>
+                <td class="price-table__option price-table__option--no">
+                  <span class="visually-hidden">Недоступная опция</span>
+                </td>
+                <td class="price-table__option price-table__option--no">
+                  <span class="visually-hidden">Недоступная опция</span>
+                </td>
+                <td class="price-table__option price-table__option--yes">
+                  <span class="visually-hidden">Доступная опция</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
         <div class="price__pagination slider-pagination">
           <button class="slider-pagination__toggle" type="button">
             <span class="visually-hidden">Переключить слайд.</span>
@@ -219,7 +221,7 @@
               <a class="contacts__link" href="tel:+78125556666">+7 (812) 555-66-66</a>
             </dd>
           </div>
-          <div class="contacts__item contacts__item--addressr">
+          <div class="contacts__item contacts__item--address">
             <dt class="contacts__item-title">Приезжайте в гости:</dt>
             <dd class="contacts__info">
               <a class="contacts__link" href="#">

@@ -1,20 +1,10 @@
 .price {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   overflow: hidden;
 }
 
-.price__table {
-  width: 840px;
-
-  @media (min-width: $tablet-width) {
-    width: 612px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 936px;
-  }
+.price__container {
+  display: flex;
+  justify-content: center;
 }
 
 .price__pagination {
