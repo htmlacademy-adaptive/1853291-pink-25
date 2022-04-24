@@ -1,3 +1,12 @@
+.price {
+  overflow: hidden;
+}
+
+.price__container {
+  display: flex;
+  justify-content: center;
+}
+
 .price__pagination {
   padding: 50px;
   text-align: center;

@@ -1,0 +1,61 @@
+.side-effect {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    display: grid;
+    grid-template-columns: 240px 380px;
+    justify-content: center;
+    background-color: $color-white;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 300px 640px;
+    background-color: $color-gray;
+  }
+}
+
+.side-effect__container {
+  padding: 102px 0 20px 72px;
+  grid-column-start: 2;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+
+  @media (min-width: $desktop-width) {
+    padding: 115px 0 120px 72px;
+
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+.side-effect__title {
+  @media (min-width: $tablet-width) {
+    margin: 0 0 24px 0;
+
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+
+.side-effect__description {
+  color: $color-primary;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 24px 0;
+  }
+}
+
+.side-effect__link {
+  color: $color-accent;
+}

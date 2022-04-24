@@ -2,19 +2,22 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body class="page__body">
     <header class="header">
-      <a class="header__logo logo" href="index.html">
-        <img src="img/logo.svg" width="74" height="23" alt="Логотип Пинк.">
-      </a>
-      <nav class="header-nav">
-        <button class="header-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню.</span>
-        </button>
-        <ul class="header-nav__list nav-list">
+      <nav class="header__nav">
+        <div class="header__menu">
+          <a class="header__logo logo" href="index.html">
+            <img src="img/logo.svg" width="74" height="23" alt="Логотип Пинк.">
+          </a>
+          <button class="header__toggle" type="button">
+            <span class="visually-hidden">Открыть меню.</span>
+          </button>
+        </div>
+        <ul class="header__list nav-list">
           <li class="nav-list__item nav-list__item--current">
             <a class="nav-list__link" href="index.html">Главная</a>
           </li>
@@ -32,37 +35,38 @@
     </header>
     <main class="main-container">
       <h1 class="visually-hidden">Пинк - мобильное приложение для раскрашивания серых будней в розовый цвет</h1>
-      <section class="download-app intro">
-        <h2 class="visually-hidden">Скачать приложение на своё устройство.</h2>
-        <p class="intro__title">Взгляните на жизнь иначе!</p>
-        <img src="https://via.placeholder.com/320x287" width="320" height="287" alt="Телефон, на котором загружено приложение 'Пинк' в ладони.">
-        <div class="download-app__wrapper">
-          <a class="download-app__link button-primary" href="#">Скачать приложение</a>
-          <ul class="download-app__list">
-            <li class="download-app__item">
-              <a class="download-app__link download-app__link--apple" href="#">
-                <span class="visually-hidden">Скачать в App Store.</span>
-              </a>
-            </li>
-            <li class="download-app__item">
-              <a class="download-app__link download-app__link--android" href="#">
-                <span class="visually-hidden">Скачать в Google Play.</span>
-              </a>
-            </li>
-            <li class="download-app__item">
-              <a class="download-app__link download-app__link--windows" href="#">
-                <span class="visually-hidden">Скачать в Microsoft Store.</span>
-              </a>
-            </li>
-          </ul>
-          <p class="download-app__description">
-            Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-          </p>
+      <section class="download-app">
+        <div class="download-app__container">
+          <h2 class="visually-hidden">Скачать приложение на своё устройство.</h2>
+          <div class="download-app__wrapper">
+            <p class="download-app__slogan">Взгляните на жизнь иначе!</p>
+            <a class="download-app__link button-primary" href="#">Скачать приложение</a>
+            <ul class="download-app__list">
+              <li class="download-app__item">
+                <a class="download-app__link download-app__link--apple" href="#">
+                  <span class="visually-hidden">Скачать в App Store.</span>
+                </a>
+              </li>
+              <li class="download-app__item">
+                <a class="download-app__link download-app__link--android" href="#">
+                  <span class="visually-hidden">Скачать в Google Play.</span>
+                </a>
+              </li>
+              <li class="download-app__item">
+                <a class="download-app__link download-app__link--windows" href="#">
+                  <span class="visually-hidden">Скачать в Microsoft Store.</span>
+                </a>
+              </li>
+            </ul>
+            <p class="download-app__description">
+              Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+            </p>
+          </div>
         </div>
       </section>
       <section class="product-features">
         <h2 class="visually-hidden">Основные особенности товара.</h2>
-        <div class="product-features__subtitle-wrapper">
+        <div class="product-features__subtitle-container container">
           <p class="product-features__subtitle">
             Устали от серости мегаполиса?
           </p>
@@ -94,14 +98,25 @@
             <p class="product-features__description">
               Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
             </p>
-            <img class="product-features__img" src="https://via.placeholder.com/157x280" width="157" height="280" alt="Пример использования фильтра и комментариев в приложении Пинк.">
           </li>
         </ul>
       </section>
-      <section class="feedback">
+      <section class="side-effect">
+        <div class="side-effect__container">
+          <h2 class="side-effect__title">Эффект на 24 часа!</h2>
+          <p class="side-effect__description">
+            Британские ученые провели исследования
+            и доказали, что положительный эффект
+            от использования приложения длится целые сутки!
+          </p>
+          <a class="side-effect__link" href="#">Узнать больше об исследовании</a>
+        </div>
+      </section>
+      <section class="feedback container">
         <h2 class="visually-hidden">Отзывы.</h2>
         <div class="feedback__item feedback-item">
           <p class="feedback-item__author">Николай Петров</p>
+          <p class="feedback-item__author-info">25 лет, водитель трамвая</p>
           <p class="feedback-item__text">
             «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
           </p>
@@ -120,63 +135,65 @@
       </section>
       <section class="price">
         <h2 class="visually-hidden">Тарифы и доступные опции.</h2>
-        <table class="price__table price-table">
-          <thead>
-            <tr>
-              <th class="price-table__category price-table__category--none"></th>
-              <th class="price-table__category">
-                База
-                <p class="price-table__cost">1,99&nbsp;USD</p>
-              </th>
-              <th class="price-table__category price-table__category--special">
-                Стандарт
-                <p class="price-table__cost">3,99&nbsp;USD</p>
-              </th>
-              <th class="price-table__category">
-                Анлим
-                <p class="price-table__cost">9,99&nbsp;USD</p>
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th class="price-table__option">Розовый фильтр</th>
-              <td class="price-table__option price-table__option--yes">
-                <span class="visually-hidden">Доступная опция</span>
-              </td>
-              <td class="price-table__option price-table__option--yes">
-                <span class="visually-hidden">Доступная опция</span>
-              </td>
-              <td class="price-table__option price-table__option--yes">
-                <span class="visually-hidden">Доступная опция</span>
-              </td>
-            </tr>
-            <tr>
-              <th class="price-table__option">Смайлики</th>
-              <td class="price-table__option price-table__option--no">
-                <span class="visually-hidden">Недоступная опция</span>
-              </td>
-              <td class="price-table__option price-table__option--yes">
-                <span class="visually-hidden">Доступная опция</span>
-              </td>
-              <td class="price-table__option price-table__option--yes">
-                <span class="visually-hidden">Доступная опция</span>
-              </td>
-            </tr>
-            <tr>
-              <th class="price-table__option">Комментарии</th>
-              <td class="price-table__option price-table__option--no">
-                <span class="visually-hidden">Недоступная опция</span>
-              </td>
-              <td class="price-table__option price-table__option--no">
-                <span class="visually-hidden">Недоступная опция</span>
-              </td>
-              <td class="price-table__option price-table__option--yes">
-                <span class="visually-hidden">Доступная опция</span>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+        <div class="price__container">
+          <table class="price__table price-table">
+            <thead>
+              <tr>
+                <th class="price-table__category price-table__category--none"></th>
+                <th class="price-table__category">
+                  База
+                  <p class="price-table__cost">1,99&nbsp;USD</p>
+                </th>
+                <th class="price-table__category price-table__category--special">
+                  Стандарт
+                  <p class="price-table__cost">3,99&nbsp;USD</p>
+                </th>
+                <th class="price-table__category">
+                  Анлим
+                  <p class="price-table__cost">9,99&nbsp;USD</p>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="price-table__option price-table__option--name">Розовый фильтр</th>
+                <td class="price-table__option price-table__option--yes">
+                  <span class="visually-hidden">Доступная опция</span>
+                </td>
+                <td class="price-table__option price-table__option--yes">
+                  <span class="visually-hidden">Доступная опция</span>
+                </td>
+                <td class="price-table__option price-table__option--yes">
+                  <span class="visually-hidden">Доступная опция</span>
+                </td>
+              </tr>
+              <tr>
+                <th class="price-table__option price-table__option--name">Смайлики</th>
+                <td class="price-table__option price-table__option--no">
+                  <span class="visually-hidden">Недоступная опция</span>
+                </td>
+                <td class="price-table__option price-table__option--yes">
+                  <span class="visually-hidden">Доступная опция</span>
+                </td>
+                <td class="price-table__option price-table__option--yes">
+                  <span class="visually-hidden">Доступная опция</span>
+                </td>
+              </tr>
+              <tr>
+                <th class="price-table__option price-table__option--name">Комментарии</th>
+                <td class="price-table__option price-table__option--no">
+                  <span class="visually-hidden">Недоступная опция</span>
+                </td>
+                <td class="price-table__option price-table__option--no">
+                  <span class="visually-hidden">Недоступная опция</span>
+                </td>
+                <td class="price-table__option price-table__option--yes">
+                  <span class="visually-hidden">Доступная опция</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
         <div class="price__pagination slider-pagination">
           <button class="slider-pagination__toggle" type="button">
             <span class="visually-hidden">Переключить слайд.</span>
@@ -189,7 +206,7 @@
           </button>
         </div>
       </section>
-      <section class="contacts">
+      <section class="contacts container">
         <h2 class="visually-hidden">Наши контакты.</h2>
         <p class="contacts__subtitle subtitle">
           Остались вопросы?
@@ -198,19 +215,13 @@
           Свяжитесь с нами!
         </p>
         <dl class="contacts__list">
-          <div class="contacts__item">
+          <div class="contacts__item contacts__item--phone">
             <dt class="contacts__item-title">Звоните:</dt>
             <dd class="contacts__info">
               <a class="contacts__link" href="tel:+78125556666">+7 (812) 555-66-66</a>
             </dd>
           </div>
-          <div class="contacts__item">
-            <dt class="contacts__item-title">Пишите:</dt>
-            <dd class="contacts__info">
-              <a class="contacts__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-            </dd>
-          </div>
-          <div class="contacts__item">
+          <div class="contacts__item contacts__item--address">
             <dt class="contacts__item-title">Приезжайте в гости:</dt>
             <dd class="contacts__info">
               <a class="contacts__link" href="#">
@@ -219,13 +230,19 @@
               </a>
             </dd>
           </div>
+          <div class="contacts__item contacts__item--mail">
+            <dt class="contacts__item-title">Пишите:</dt>
+            <dd class="contacts__info">
+              <a class="contacts__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            </dd>
+          </div>
         </dl>
         <div class="contacts__map map-wrapper">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4963.921299263501!2d30.31957304155843!3d59.93899603141911!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1649596956767!5m2!1sru!2sru" width="320" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer container">
       <a class="footer__logo" href="#">
         <svg width="145" height="40" viewBox="0 0 145 40" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M71.005 18.5486C71.0049 18.2125 71.1358 17.8898 71.3697 17.6494C71.6037 17.409 71.922 17.2701 72.2568 17.2623H79.39C84.4469 17.2623 87.7751 19.9645 87.7751 24.3918V24.4516C87.7751 29.2977 83.7415 31.8105 78.9727 31.8105H73.5384V38.611C73.5539 38.7874 73.5328 38.9651 73.4762 39.1329C73.4196 39.3006 73.3289 39.4547 73.2097 39.5854C73.0906 39.716 72.9457 39.8204 72.7842 39.8918C72.6227 39.9631 72.4481 40 72.2717 40C72.0952 40 71.9207 39.9631 71.7592 39.8918C71.5977 39.8204 71.4527 39.716 71.3336 39.5854C71.2145 39.4547 71.1237 39.3006 71.0671 39.1329C71.0106 38.9651 70.9894 38.7874 71.005 38.611V18.5486ZM79.0721 29.5171C82.7778 29.5171 85.2119 27.5228 85.2119 24.5314V24.4716C85.2119 21.2608 82.8175 19.5956 79.2509 19.5956H73.588V29.4772L79.0721 29.5171Z" fill="#283645"/>

@@ -1,4 +1,20 @@
+.feedback {
+  padding: 50px 0 60px 0;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 108px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 195px;
+  }
+}
+
 .feedback__pagination {
-  padding: 44px;
+  padding-top: 44px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    order: 2;
+  }
 }

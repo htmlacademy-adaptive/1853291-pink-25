@@ -1,5 +1,26 @@
 .download-app {
-  padding-top: 34px;
+
+  background-color: $color-primary;
+}
+
+.download-app__container {
+  padding-top: 29px;
+  padding-bottom: 38px;
+  display: grid;
+  grid-template-columns: 280px;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 103px;
+    padding-bottom: 119px;
+    grid-template-columns: 300px 320px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 114px;
+    padding-bottom: 130px;
+    grid-template-columns: 300px 640px;
+  }
 }
 
 .download-app__slogan {
@@ -10,15 +31,16 @@
   line-height: 29px;
   color: $color-white;
   text-align: center;
-}
 
-.download-app__wrapper {
-  padding-top: 28px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 38px;
+  @media (min-width: $tablet-width) {
+    font-size: 40px;
+    line-height: 48px;
+  }
 
-  background-color: $color-primary;
+  @media (min-width: $desktop-width) {
+    font-size: 50px;
+    line-height: 68px;
+  }
 }
 
 .download-app__description {
@@ -28,12 +50,14 @@
   font-weight: 300;
   font-size: 14px;
   line-height: 24px;
-  color: $font-color-secondary;
+  color: $color-white;
+  text-align: center;
 }
 
 .download-app__list {
   display: flex;
   align-items: center;
+  justify-content: center;
   margin-top: 32px;
   margin-bottom: 28px;
   padding: 0;
@@ -52,7 +76,7 @@
   display: block;
   width: 56px;
   height: 56px;
-  background-color: $font-color-primary;
+  background-color: $color-primary;
   background-position: center;
   background-repeat: no-repeat;
 }

@@ -1,8 +1,43 @@
 .header {
-  padding: 23px 20px 0 20px;
   background-color: $color-primary;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
-.header-nav__list {
-  margin: 0;
+.header__nav {
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.header__menu {
+  display: flex;
+  justify-content: space-between;
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    width: 620px;
+  }
+}
+
+.header__logo {
+  display: block;
+  padding: 20px;
+}
+
+.header__toggle {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
