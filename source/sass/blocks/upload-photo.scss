@@ -1,9 +1,40 @@
+.upload-photo {
+  @media (min-width: $desktop-width) {
+    width: 940px;
+    margin: 0 auto;
+  }
+}
+
 .upload-photo__form {
   margin: 0;
-  padding: 20px 20px 40px 20px;
+  padding: 20px 0 40px 0;
   background-color: $color-gray;
+
+  display: grid;
+  grid-template-columns: 280px;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 57px 0 57px 0;
+    grid-template-columns: 300px 320px;
+    grid-row: 400px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 380px 560px;
+  }
 }
 
 .upload-photo__editing {
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    grid-column-start: 2;
+  }
+}
+
+.upload-photo__button-wrapper {
+  @media (min-width: $tablet-width) {
+    grid-column-start: 2;
+  }
 }

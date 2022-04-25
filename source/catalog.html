@@ -20,8 +20,8 @@
           <li class="nav-list__item">
             <a class="nav-list__link" href="index.html">Главная</a>
           </li>
-          <li class="nav-list__item">
-            <a class="nav-list__link nav-list__item--current" href="catalog.html">Фотографии</a>
+          <li class="nav-list__item nav-list__item--current">
+            <a class="nav-list__link" href="catalog.html">Фотографии</a>
           </li>
           <li class="nav-list__item">
             <a class="nav-list__link" href="form.html">Конкурс</a>
@@ -34,10 +34,10 @@
     </header>
     <main class="main-container">
       <div class="intro">
-        <h1 class="intro__title">Фотографии пользователей</h1>
+        <h1 class="intro__title intro__title--catalog container">Фотографии пользователей</h1>
       </div>
       <section class="catalog">
-        <p class="catalog__slogan slogan">
+        <p class="catalog__slogan slogan container">
           Взгляните на фотографии, которые
           выкладывают пользователи!
           Видите, как не хватает ваших?
@@ -192,53 +192,52 @@
       </section>
       <section class="upload-photo">
         <h2 class="visually-hidden">Запостить своё фото.</h2>
-        <p class="upload-photo__slogan slogan">
+        <p class="upload-photo__slogan slogan container">
           Затмите их всех!
           Выкладывайте все, что накопилось в телефоне!
         </p>
         <form class="upload-photo__form" method="post" action="https://echo.htmlacademy.ru">
           <img class="upload-photo__img" src="https://via.placeholder.com/280x374" width="280" height="374" alt="Фото для загрузки. Зимняя дорога под снегом в ясный день.">
-          <ul class="upload-photo__editing editing-tools">
-            <li class="editing-tools__item">
-              <button class="editing-tools__button editing-tools__button--crop">
-                <span class="visually-hidden">Кадрирование.</span>
-                <svg></svg>
-              </button>
-              <div class="editing-tools__range range-bar">
-                <label for="crop-input-id" class="visually-hidden">
-                  Выбор области кадрирования.
-                </label>
-                <input class="range-bar__input" type="range" name="crop-input" id="crop-input-id">
-              </div>
-            </li>
-            <li>
-              <button class="editing-tools__button editing-tools__button--fill">
-                <span class="visually-hidden">Розовый фильтр.</span>
-                <svg></svg>
-              </button>
-              <div class="editing-tools__range range-bar">
-                <label for="fill-input-id" class="visually-hidden">
-                  Изменить насыщенность фильтра.
-                </label>
-                <input class="range-bar__input" type="range" name="fill-input" id="fill-input-id">
-              </div>
-            </li>
-            <li>
-              <button class="editing-tools__button editing-tools__button--contrast">
-                <span class="visually-hidden">Контраст.</span>
-                <svg></svg>
-              </button>
-              <div class="editing-tools__range range-bar">
-                <label for="contrast-input-id" class="visually-hidden">
-                  Изменить контрастность изображения.
-                </label>
-                <input class="range-bar__input" type="range" name="contrast-input" id="contrast-input-id">
-              </div>
-            </li>
-          </ul>
-          <div class="upload-photo__button-wrapper">
-            <button class="upload-photo__button upload-photo__button--post" type="submit">Запостить</button>
-            <button class="upload-photo__button upload-photo__button--cancel" type="reset">Отмена</button>
+          <div class="upload-photo__editing-container">
+            <ul class="upload-photo__editing editing-tools">
+              <li class="editing-tools__item">
+                <button class="editing-tools__button editing-tools__button--crop">
+                  <span class="visually-hidden">Кадрирование.</span>
+                </button>
+                <div class="editing-tools__range range-bar">
+                  <label for="crop-input-id" class="visually-hidden">
+                    Выбор области кадрирования.
+                  </label>
+                  <input class="range-bar__input" type="range" name="crop-input" id="crop-input-id">
+                </div>
+              </li>
+              <li>
+                <button class="editing-tools__button editing-tools__button--fill">
+                  <span class="visually-hidden">Розовый фильтр.</span>
+                </button>
+                <div class="editing-tools__range range-bar">
+                  <label for="fill-input-id" class="visually-hidden">
+                    Изменить насыщенность фильтра.
+                  </label>
+                  <input class="range-bar__input" type="range" name="fill-input" id="fill-input-id">
+                </div>
+              </li>
+              <li>
+                <button class="editing-tools__button editing-tools__button--contrast">
+                  <span class="visually-hidden">Контраст.</span>
+                </button>
+                <div class="editing-tools__range range-bar">
+                  <label for="contrast-input-id" class="visually-hidden">
+                    Изменить контрастность изображения.
+                  </label>
+                  <input class="range-bar__input" type="range" name="contrast-input" id="contrast-input-id">
+                </div>
+              </li>
+            </ul>
+            <div class="upload-photo__button-wrapper">
+              <button class="upload-photo__button upload-photo__button--post" type="submit">Запостить</button>
+              <button class="upload-photo__button upload-photo__button--cancel" type="reset">Отмена</button>
+            </div>
           </div>
         </form>
       </section>
