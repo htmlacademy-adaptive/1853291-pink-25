@@ -1,5 +1,5 @@
-.photo-card {
-  background-color: $color-gray;
+.photo-card__img {
+  display: block;
 }
 
 .photo-card__description {
@@ -45,14 +45,34 @@
   margin-top: 27px;
 }
 
-.photo-card--special {
+.photo-card__img-container {
+  width: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.photo-card__img--special {
+  display: block;
+  width: 100%;
+  max-width: 320px;
+  height: 137px;
+
   @media (min-width: $tablet-width) {
-    grid-column-start: 1;
-    grid-column-end: 3;
+    height: 506px;
+    max-width: 1200px;
+  }
+}
+
+.photo-card__description--special {
+  background-color: $color-gray;
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 620px;
   }
 
   @media (min-width: $desktop-width) {
-    grid-column-start: 1;
-    grid-column-end: 4;
+    width: 940px;
   }
 }

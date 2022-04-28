@@ -1,10 +1,22 @@
 .contest-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  @media (max-width: $mobile-width-only) {
+    display: grid;
+    grid-template-columns: 280px;
+    justify-content: center;
+    grid-template-areas:
+      "user-info"
+      "acievement"
+      "contacts"
+      "app"
+      "feedback"
+      "button-container";
+  }
 
   @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
     row-gap: 50px;
+    justify-content: center;
   }
 
   @media (min-width: $desktop-width) {
@@ -14,54 +26,33 @@
   }
 }
 
+.contest-form__user-info {
+  grid-area: "user-info";
+}
+
+.contest-form__achievement {
+  grid-area: "acievement";
+}
+
+.contest-form__contacts {
+  grid-area: "contacts";
+}
+
+.contest-form__app {
+  grid-area: "app";
+}
+
+.contest-form__feedback {
+  grid-area: "feedback";
+}
+
+.contest-form__button-container {
+  grid-area: "button-container";
+}
+
 .contest-form__group {
   @media (max-width: $mobile-width-only) {
     padding-top: 42px;
     padding-bottom: 44px;
-  }
-}
-
-.contest-form__group:nth-child(2) {
-  @media (max-width: $mobile-width-only) {
-    order: 2;
-  }
-}
-
-.contest-form__group:nth-child(3) {
-  @media (max-width: $mobile-width-only) {
-    order: 1;
-  }
-}
-
-.contest-form__group:nth-child(4) {
-  @media (max-width: $mobile-width-only) {
-    order: 0;
-  }
-}
-
-.contest-form__group:nth-child(5) {
-  @media (max-width: $mobile-width-only) {
-    order: 3;
-  }
-}
-
-.contest-form__group:nth-child(6) {
-  @media (max-width: $mobile-width-only) {
-    order: 4;
-  }
-}
-
-.contest-form__group-container {
-  background-color: #f2f2f2;
-
-  @media (min-width: $tablet-width) {
-    background-color: transparent;
-  }
-}
-
-.contest-form__button-container {
-  @media (min-width: $tablet-width) {
-    display: flex;
-    justify-content: space-between;
   }
 }

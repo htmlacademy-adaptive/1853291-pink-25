@@ -1,5 +1,14 @@
 .catalog {
-  padding: 50px 20px;
+  padding-top: 50px;
+}
+
+.catalog__panorama {
+  overflow: hidden;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 50px;
+  }
 }
 
 .catalog__list {
@@ -21,4 +30,8 @@
     row-gap: 54px;
     column-gap: 20px;
   }
+}
+
+.catalog__item {
+  background-color: $color-gray;
 }
