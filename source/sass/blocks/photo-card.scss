@@ -54,7 +54,7 @@
 .photo-card__img--special {
   display: block;
   width: 100%;
-  max-width: 320px;
+  object-fit: cover;
   height: 137px;
 
   @media (min-width: $tablet-width) {

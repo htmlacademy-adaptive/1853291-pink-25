@@ -1,58 +1,73 @@
 .contest-form {
-  @media (max-width: $mobile-width-only) {
-    display: grid;
-    grid-template-columns: 280px;
-    justify-content: center;
-    grid-template-areas:
-      "user-info"
-      "acievement"
-      "contacts"
-      "app"
-      "feedback"
-      "button-container";
-  }
-
-  @media (min-width: $tablet-width) {
-    display: flex;
-    flex-direction: column;
-    row-gap: 50px;
-    justify-content: center;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
   @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    width: 940px;
     flex-direction: row;
     flex-wrap: wrap;
-    column-gap: 70px;
+  }
+}
+
+.contest-form__achievement-container {
+  @media (max-width: $mobile-width-only) {
+    order: 0;
+  }
+}
+
+.contest-form__contacts {
+  @media (max-width: $mobile-width-only) {
+    order: 1;
+  }
+}
+
+.contest-form__app-container {
+  @media (max-width: $mobile-width-only) {
+    order: 2;
+  }
+}
+
+.contest-form__feedback {
+  @media (max-width: $mobile-width-only) {
+    order: 3;
+  }
+}
+
+.contest-form__button-container {
+  @media (max-width: $mobile-width-only) {
+    order: 4;
+  }
+}
+
+.contest-form__app-container,
+.contest-form__achievement-container {
+  background-color: $color-gray;
+
+  @media (min-width: $tablet-width) {
+    background-color: transparent;
   }
 }
 
 .contest-form__user-info {
-  grid-area: "user-info";
-}
-
-.contest-form__achievement {
-  grid-area: "acievement";
-}
-
-.contest-form__contacts {
-  grid-area: "contacts";
+  @media (min-width: $desktop-width) {
+    width: 435px;
+    margin-right: 70px;
+  }
 }
 
 .contest-form__app {
-  grid-area: "app";
-}
-
-.contest-form__feedback {
-  grid-area: "feedback";
-}
-
-.contest-form__button-container {
-  grid-area: "button-container";
+  @media (min-width: $desktop-width) {
+    width: 435px;
+  }
 }
 
 .contest-form__group {
-  @media (max-width: $mobile-width-only) {
-    padding-top: 42px;
-    padding-bottom: 44px;
+  padding: 42px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin-bottom: 50px;
   }
 }

@@ -42,7 +42,7 @@
         миль на вашу бонусную карту!
       </p>
       <form class="main-container__form contest-form" method="post" action="https://echo.htmlacademy.ru">
-        <fieldset class="contest-form__group form-user-info container container--half">
+        <fieldset class="contest-form__group contest-form__user-info container">
           <legend class="visually-hidden">Данные пользователя</legend>
           <div class="contest-form__field field">
             <label for="lastname-id" class="field__label form-label">Фамилия:</label>
@@ -57,8 +57,8 @@
             <input class="field__input" type="text" name="middlename" id="middlename-id" placeholder="Ну и отчество тоже">
           </div>
         </fieldset>
-        <div class="contest-form__group contest-form__group-container">
-          <fieldset class="contest-form__group form-app container container--half">
+        <div class="contest-form__group contest-form__app-container">
+          <fieldset class="contest-form__app form-app container">
             <legend class="form-app__title form-label">С каким приложением путешествовали?</legend>
             <ul class="form-app__list">
               <li class="form-app__item">
@@ -82,7 +82,7 @@
             </ul>
           </fieldset>
         </div>
-        <fieldset class="contest-form__group form-contacts container">
+        <fieldset class="contest-form__group contest-form__contacts container">
           <legend class="visually-hidden">Контактная информация</legend>
           <div class="contest-form__field field">
             <label for="tel-id" class="field__label form-label">Номер телефона</label>
@@ -93,8 +93,8 @@
             <input class="field__input" type="email" name="email" id="email-id" placeholder="Введите почту *" required>
           </div>
         </fieldset>
-        <div class="contest-form__group contest-form__group-container">
-          <fieldset class="contest-form__acievement form-achievement container">
+        <div class="contest-form__group contest-form__achievement-container">
+          <fieldset class="contest-form__achievement form-achievement container">
             <legend class="form-achievement__title form-label">Ваши безбашенные достижения в путешествии</legend>
             <ul class="form-achievement__list">
               <li class="form-achievement__item">
@@ -136,11 +136,11 @@
             </ul>
           </fieldset>
         </div>
-        <div class="contest-form__group field container">
+        <div class="contest-form__group contest-form__feedback field container">
           <label for="feedback-text-id" class="field__label form-label">Опишите свои эмоции</label>
           <textarea class="field__input" name="feedback-text" id="feedback-text-id" rows="5" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </div>
-        <div class="contest-form__group contest-form__button-container container">
+        <div class="contest-form__group contest-form__button-container">
           <button class="contest-form__button form-button" type="submit">Отправить форму</button>
           <p class="contest-form__required">* — обязательные поля</p>
         </div>
