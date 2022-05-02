@@ -1,9 +1,37 @@
 .upload-photo__form {
   margin: 0;
-  padding: 20px 20px 40px 20px;
+  padding: 20px 0 40px 0;
   background-color: $color-gray;
+
+  display: grid;
+  grid-template-columns: 280px;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 57px 0 57px 0;
+    grid-template-columns: 300px 300px;
+    gap: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    width: 940px;
+    padding: 60px 60px 60px 80px;
+    grid-template-columns: 300px 410px;
+    gap: 90px;
+  }
 }
 
 .upload-photo__editing {
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    grid-column-start: 2;
+  }
+}
+
+.upload-photo__button-wrapper {
+  @media (min-width: $tablet-width) {
+    grid-column-start: 2;
+  }
 }

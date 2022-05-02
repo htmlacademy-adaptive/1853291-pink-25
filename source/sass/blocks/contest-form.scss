@@ -1,14 +1,73 @@
-/* .contest-form {
-  display: grid;
-  grid-template-columns: 280px;
+.contest-form {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
 
-  @media (min-width: $tablet-width) {
-    grid-template-columns: 620px;
-  }
-
   @media (min-width: $desktop-width) {
-    grid-template-columns: 940px;
+    margin: 0 auto;
+    width: 940px;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }
-*/
+
+.contest-form__achievement-container {
+  @media (max-width: $mobile-width-only) {
+    order: 0;
+  }
+}
+
+.contest-form__contacts {
+  @media (max-width: $mobile-width-only) {
+    order: 1;
+  }
+}
+
+.contest-form__app-container {
+  @media (max-width: $mobile-width-only) {
+    order: 2;
+  }
+}
+
+.contest-form__feedback {
+  @media (max-width: $mobile-width-only) {
+    order: 3;
+  }
+}
+
+.contest-form__button-container {
+  @media (max-width: $mobile-width-only) {
+    order: 4;
+  }
+}
+
+.contest-form__app-container,
+.contest-form__achievement-container {
+  background-color: $color-gray;
+
+  @media (min-width: $tablet-width) {
+    background-color: transparent;
+  }
+}
+
+.contest-form__user-info {
+  @media (min-width: $desktop-width) {
+    width: 435px;
+    margin-right: 70px;
+  }
+}
+
+.contest-form__app {
+  @media (min-width: $desktop-width) {
+    width: 435px;
+  }
+}
+
+.contest-form__group {
+  padding: 42px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin-bottom: 50px;
+  }
+}

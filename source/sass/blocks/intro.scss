@@ -1,18 +1,27 @@
-/* .intro {
-   background-image: url("../img/download-app/back-tablet.png");
-  background-color: $color-white;
+.intro {
+  background-color: $color-primary;
+  text-align: center;
 }
-*/
 
 .intro__title {
-  margin: 0;
-
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 36px;
+  min-height: 171px;
   font-weight: 300;
   font-size: 24px;
   line-height: 33px;
   color: $color-white;
-}
 
-.intro__slogan {
-  margin: 0;
+  @media (min-width: $tablet-width) {
+    padding-top: 81px;
+    min-height: 330px;
+    font-size: 50px;
+    line-height: 68px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 74px;
+    min-height: 284px;
+  }
 }

@@ -1,0 +1,9 @@
+.form-achievement__list {
+  margin: 0;
+  list-style-type: none;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+  }
+}

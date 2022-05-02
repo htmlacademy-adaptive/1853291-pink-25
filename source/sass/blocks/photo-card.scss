@@ -1,5 +1,5 @@
-.photo-card {
-  background-color: $color-gray;
+.photo-card__img {
+  display: block;
 }
 
 .photo-card__description {
@@ -43,4 +43,36 @@
 
 .photo-card__like {
   margin-top: 27px;
+}
+
+.photo-card__img-container {
+  width: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.photo-card__img--special {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  height: 137px;
+
+  @media (min-width: $tablet-width) {
+    height: 506px;
+    max-width: 1200px;
+  }
+}
+
+.photo-card__description--special {
+  background-color: $color-gray;
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 620px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+  }
 }

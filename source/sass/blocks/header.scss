@@ -13,6 +13,7 @@
   width: auto;
 
   @media (min-width: $desktop-width) {
+    width: 940px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -28,6 +29,12 @@
 
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     width: 620px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    width: 147px;
+    margin-left: 0;
   }
 }
 

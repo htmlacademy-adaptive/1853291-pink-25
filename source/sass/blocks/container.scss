@@ -1,5 +1,5 @@
 .container {
-  width: 320px;
+  width: 280px;
   margin-left: auto;
   margin-right: auto;
 
@@ -9,5 +9,12 @@
 
   @media (min-width: $desktop-width) {
     width: 940px;
+  }
+}
+
+.container--desktop {
+  @media (min-width: $desktop-width) {
+    width: 431px;
+    margin: 0;
   }
 }
