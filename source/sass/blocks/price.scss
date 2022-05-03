@@ -2,6 +2,19 @@
   overflow: hidden;
 }
 
+.price__table {
+  width: 840px;
+  border-collapse: collapse;
+
+  @media (min-width: $tablet-width) {
+    max-width: 612px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 936px;
+  }
+}
+
 .price__container {
   display: flex;
   justify-content: center;
@@ -11,4 +24,8 @@
   padding: 50px;
   text-align: center;
   background-color: $color-gray;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }

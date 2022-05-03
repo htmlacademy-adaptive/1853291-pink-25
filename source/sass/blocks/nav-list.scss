@@ -3,10 +3,30 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+  background-color: $color-primary;
 
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
+    background-color: transparent;
+  }
+}
+
+.nav-list__item {
+  border-top: 1px solid #000000;
+  box-shadow: 0 1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
+
+  @media (min-width: $desktop-width) {
+    border: 0;
+    box-shadow: none;
+  }
+}
+
+.nav-list__item:last-child {
+  border-bottom: 1px solid #000000;
+
+  @media (min-width: $desktop-width) {
+    border: 0;
   }
 }
 
@@ -30,4 +50,8 @@
     line-height: 18px;
     text-transform: none;
   }
+}
+
+.nav-list__link:hover {
+  color: $color-accent;
 }

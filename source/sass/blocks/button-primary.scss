@@ -1,0 +1,28 @@
+.button-primary {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  text-decoration: none;
+  color: #ffffff;
+  border: 3px solid #ffffff;
+  border-radius: 30px;
+  background-color: transparent;
+
+  @media (min-width: $desktop-width) {
+    font-size: 21px;
+  }
+}
+
+.button-primary:hover {
+  background-color: #ffffff;
+  color: $color-accent;
+}
+
+.button-primary:active {
+  background-color: #ffffff;
+  color: rgba(210, 40, 86, 0.3);
+}
