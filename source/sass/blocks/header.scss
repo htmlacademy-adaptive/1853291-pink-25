@@ -95,6 +95,11 @@
   }
 }
 
+.header__list {
+  position: absolute;
+  width: 100%;
+}
+
 .header__nav--closed .header__toggle {
   display: block;
   position: relative;
@@ -159,3 +164,4 @@
 .header__nav--opened .header__toggle:hover::after {
   background-color: $color-accent;
 }
+
