@@ -17,6 +17,23 @@
   }
 }
 
+.side-effect::before {
+  content: "";
+  width: 238px;
+  height: 326px;
+  background-image: url("../img/side-effect/side-effect.svg");
+  background-repeat: no-repeat;
+  background-position: center 50px;
+  background-size: 238px 276px;
+
+  @media (min-width: $desktop-width) {
+    content: "";
+    width: 298px;
+    height: 433px;
+    background-size: 298px 345px;
+  }
+}
+
 .side-effect__container {
   padding: 102px 0 20px 72px;
   grid-column-start: 2;

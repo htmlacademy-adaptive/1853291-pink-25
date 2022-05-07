@@ -22,10 +22,8 @@
   background-color: $color-white;
 }
 
-.footer__logo:hover {
-  svg path {
-    fill: $color-accent;
-  }
+.footer__logo:hover svg path {
+  fill: $color-accent;
 }
 
 .footer__logo:active {

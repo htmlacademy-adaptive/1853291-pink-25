@@ -10,6 +10,10 @@
   }
 }
 
+.contacts__container {
+  padding-bottom: 40px;
+}
+
 .contacts__subtitle {
   margin: 0;
   padding: 0;
@@ -96,12 +100,11 @@
 }
 
 .contacts__link:active {
-  color: #bfc3c7;
+  color: $color-dark-gray;
   text-decoration: none;
 }
 
 .contacts__map {
-  margin-top: 40px;
   height: 200px;
 
   @media (min-width: $tablet-width) {

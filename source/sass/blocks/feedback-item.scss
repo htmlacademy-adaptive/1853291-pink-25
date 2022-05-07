@@ -1,3 +1,20 @@
+.feedback {
+  position: relative;
+}
+
+.feedback::before {
+  @media (min-width: $desktop-width) {
+    content: "";
+    position: absolute;
+    width: 79px;
+    height: 62px;
+    background-image: url("../img/feedback/quotes.svg");
+    background-repeat: no-repeat;
+    top: 76px;
+    left: 45%;
+  }
+}
+
 .feedback-item {
   display: flex;
   flex-direction: column;
@@ -10,7 +27,7 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
-  color: #000000;
+  color: $color-black;
 
   @media (min-width: $tablet-width) {
     margin: 0 0 17px 0;

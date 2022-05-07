@@ -15,14 +15,10 @@
   }
 }
 
-.copyright__link:hover {
-  svg path {
-    fill: $color-primary;
-  }
+.copyright__link:hover svg path {
+  fill: $color-primary;
 }
 
-.copyright__link:active {
-  svg path {
-    fill: #bfc3c7;
-  }
+.copyright__link:active svg path {
+  fill: $color-dark-gray;
 }

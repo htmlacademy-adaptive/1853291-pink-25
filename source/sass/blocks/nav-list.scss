@@ -13,8 +13,8 @@
 }
 
 .nav-list__item {
-  border-top: 1px solid #000000;
-  box-shadow: 0 1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  border-top: 1px solid $color-black;
+  box-shadow: 0 1px 0 $color-black, inset 0 1px 0 rgba(255, 255, 255, 0.15);
 
   @media (min-width: $desktop-width) {
     border: 0;
@@ -23,7 +23,7 @@
 }
 
 .nav-list__item:last-child {
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid $color-black;
 
   @media (min-width: $desktop-width) {
     border: 0;

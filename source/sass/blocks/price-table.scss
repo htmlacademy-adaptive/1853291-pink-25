@@ -4,8 +4,8 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 30px;
-  border-left: 2px solid $color-gray;
-  border-right: 2px solid $color-gray;
+  border-left: 1px solid $color-gray;
+  border-right: 1px solid $color-gray;
   color: $color-white;
   background-color: $color-primary;
   text-transform: uppercase;
@@ -23,6 +23,16 @@
   }
 }
 
+.price-table__category:nth-child(2) {
+  border-left: 1px solid $color-primary;
+  border-top-left-radius: 3px;
+}
+
+.price-table__category:last-child {
+  border-left: 1px solid $color-primary;
+  border-top-right-radius: 3px;
+}
+
 .price-table__category--none {
   background-color: transparent;
   border: 0;
@@ -37,9 +47,8 @@
 }
 
 .price-table__category--special::before {
-  content: " ";
+  content: "";
   position: absolute;
-  display: block;
   top: 0;
   left: -2px;
   width: 74px;
@@ -76,6 +85,22 @@
   }
 }
 
+.price-table__row--first {
+  border-top: 2px solid $color-primary;
+}
+
+.price-table__row--last {
+  border-bottom: 2px solid $color-gray;
+
+  .price-table__option--name:first-child {
+    border-bottom-left-radius: 3px;
+  }
+
+  .price-table__option:last-child {
+    border-bottom-right-radius: 3px;
+  }
+}
+
 .price-table__option {
   position: relative;
   width: 280px;
@@ -83,7 +108,7 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
-  border: 2px solid $color-gray;
+  border: 1px solid $color-gray;
   color: $color-primary;
   background-color: $color-white;
   white-space: nowrap;
@@ -104,16 +129,27 @@
   }
 }
 
+.price-table__option:last-child {
+  border-right: 2px solid $color-gray;
+}
+
 .price-table__option--name {
   @media (max-width: $mobile-width-only) {
     display: none;
   }
+
+  @media (min-width: $tablet-width) {
+    border-left: 2px solid $color-gray;
+  }
+}
+
+.price-table__option--name:first-child {
+  border-top-left-radius: 3px;
 }
 
 .price-table__option::before {
-  content: " ";
+  content: "";
   position: absolute;
-  display: block;
   right: 20px;
   background-position: center;
   background-repeat: no-repeat;
