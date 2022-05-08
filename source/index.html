@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body class="page__body">
-    <header class="page__header header">
+    <header class="page__header header header--nojs">
       <nav class="header__nav header__nav--closed">
         <div class="header__menu">
           <a class="header__logo logo" href="index.html">
@@ -60,7 +60,7 @@
     <main class="main-container">
       <h1 class="visually-hidden">Пинк - мобильное приложение для раскрашивания серых будней в розовый цвет</h1>
       <section class="download-app">
-        <div class="download-app__container container">
+        <div class="download-app__container">
           <div class="download-app__wrapper">
             <h2 class="visually-hidden">Скачать приложение на своё устройство.</h2>
               <p class="download-app__slogan">Взгляните на жизнь иначе!</p>
@@ -139,11 +139,17 @@
       <section class="feedback container">
         <h2 class="visually-hidden">Отзывы.</h2>
         <div class="feedback__item feedback-item">
+          <button class="feedback-item__control feedback-item__control--prev" type="button">
+            <span class="visually-hidden">Предыдущий отзыв</span>
+          </button>
           <p class="feedback-item__author">Николай Петров</p>
           <p class="feedback-item__author-info">25 лет, водитель трамвая</p>
           <p class="feedback-item__text">
             «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
           </p>
+          <button class="feedback-item__control feedback-item__control--next" type="button">
+            <span class="visually-hidden">Следующий отзыв</span>
+          </button>
           <div class="feedback__pagination slider-pagination">
             <button class="slider-pagination__toggle slider-pagination__toggle--current" type="button">
               <span class="visually-hidden">Отзыв №1.</span>
@@ -316,5 +322,6 @@
         </a>
       </div>
     </footer>
+    <script src="./js/script.js"></script>
   </body>
 </html>

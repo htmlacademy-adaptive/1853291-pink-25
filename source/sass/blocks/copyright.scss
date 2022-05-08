@@ -15,10 +15,10 @@
   }
 }
 
-.copyright__link:hover svg path {
+.copyright__link:hover svg {
   fill: $color-primary;
 }
 
-.copyright__link:active svg path {
+.copyright__link:active svg {
   fill: $color-dark-gray;
 }

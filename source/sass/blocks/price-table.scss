@@ -44,31 +44,27 @@
 
 .price-table__category--special {
   position: relative;
+  overflow: hidden;
 }
 
 .price-table__category--special::before {
-  content: "";
+  content: "ХИТ";
   position: absolute;
-  top: 0;
-  left: -2px;
-  width: 74px;
-  height: 74px;
-  background-image: url("../img/price-table/popular.svg");
+  width: 110px;
+  height: 25px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  background-color: $color-accent;
   background-repeat: no-repeat;
+  transform: rotate(-45deg);
+  left: -26px;
+  top: 15px;
 
   @media (min-width: $tablet-width) {
-    width: 61px;
-    height: 61px;
-    top: -6px;
-    left: 1px;
-    background-image: url("../img/price-table/popular-tablet.svg");
-  }
-
-  @media (min-width: $desktop-width) {
-    left: 1px;
-    width: 74px;
-    height: 74px;
-    background-image: url("../img/price-table/popular.svg");
+    width: 80px;
+    left: -20px;
+    top: 5px;
   }
 }
 
