@@ -14,3 +14,11 @@
     margin-left: 15px;
   }
 }
+
+.copyright__link:hover svg {
+  fill: $color-primary;
+}
+
+.copyright__link:active svg {
+  fill: $color-dark-gray;
+}

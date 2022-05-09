@@ -1,0 +1,21 @@
+.slider-pagination__toggle {
+  box-sizing: content-box;
+  height: 6px;
+  margin: 0 19px;
+  border-radius: 50%;
+  border: none;
+  background-color: #bec3c7;
+}
+
+.slider-pagination__toggle:hover {
+  background-color: #7e868f;
+}
+
+.slider-pagination__toggle:active {
+  background-color: #e9ebec;
+}
+
+.slider-pagination__toggle--current {
+  border: 3px solid $color-primary;
+  background-color: transparent;
+}

@@ -17,4 +17,37 @@
   @media (min-width: $tablet-width) {
     order: 2;
   }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+
+.feedback-item {
+  position: relative;
+}
+
+.feedback-item__control {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    position: absolute;
+    width: 22px;
+    height: 41px;
+    left: 0;
+    top: 15%;
+    border: 0;
+    background-color: transparent;
+    background-image: url("../img/feedback/slider-control.svg");
+    background-position: center;
+    cursor: pointer;
+  }
+}
+
+.feedback-item__control--next {
+  left: auto;
+  right: 0;
+  transform: rotate(180deg);
 }

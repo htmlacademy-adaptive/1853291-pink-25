@@ -1,0 +1,27 @@
+.button-primary {
+  display: block;
+  padding-top: 12px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  text-decoration: none;
+  color: $color-white;
+  border: 3px solid $color-white;
+  border-radius: 30px;
+  background-color: transparent;
+
+  @media (min-width: $desktop-width) {
+    font-size: 21px;
+  }
+}
+
+.button-primary:hover {
+  background-color: $color-white;
+  color: $color-accent;
+}
+
+.button-primary:active {
+  background-color: $color-white;
+  color: rgba(210, 40, 86, 0.3);
+}

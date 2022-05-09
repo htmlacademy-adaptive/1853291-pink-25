@@ -1,6 +1,28 @@
 .download-app {
+  padding-top: 66px;
+  background-color: $color-primary-dark;
+  background-image:
+    url("../img/download-app/phone-mobile.png"),
+    url("../img/download-app/back-tablet.jpg");
+  background-repeat: no-repeat;
+  background-size: 320px 286px, auto 462px;
+  background-position: center 38%, center 0;
 
-  background-color: $color-primary;
+  @media (min-width: $tablet-width) {
+    background-image:
+      url("../img/download-app/phone-tablet.png"),
+      url("../img/download-app/back-desktop.jpg");
+    background-size: 660px, cover;
+    background-position: center 100%, 50% 50%;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image:
+      url("../img/download-app/phone-desktop.png"),
+      url("../img/download-app/back-desktop.jpg");
+    background-size: auto, cover;
+    background-position: calc(50% + 60px) 100%, center center;
+  }
 }
 
 .download-app__container {
@@ -11,7 +33,7 @@
   justify-content: center;
 
   @media (min-width: $tablet-width) {
-    padding-top: 103px;
+    padding-top: 153px;
     padding-bottom: 119px;
     grid-template-columns: 300px 320px;
   }
@@ -24,7 +46,7 @@
 }
 
 .download-app__slogan {
-  margin: 0 0 34px 0;
+  margin: 0 0 340px 0;
 
   font-weight: 300;
   font-size: 24px;
@@ -33,6 +55,7 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
+    margin: 0 0 40px 0;
     font-size: 40px;
     line-height: 48px;
   }
@@ -76,7 +99,6 @@
   display: block;
   width: 56px;
   height: 56px;
-  background-color: $color-primary;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -91,4 +113,12 @@
 
 .download-app__link--windows {
   background-image: url("../img/platforms/windows-logo.svg");
+}
+
+.download-app__button {
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+  }
 }

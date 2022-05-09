@@ -9,9 +9,10 @@
     flex-direction: row;
     padding: 36px 0;
     justify-content: space-between;
+    align-items: center;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     padding-top: 70px;
     padding-bottom: 70px;
   }
@@ -19,4 +20,12 @@
 
 .footer__logo {
   background-color: $color-white;
+}
+
+.footer__logo:hover svg {
+  fill: $color-accent;
+}
+
+.footer__logo:active {
+  opacity: 0.3;
 }
