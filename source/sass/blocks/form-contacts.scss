@@ -1,0 +1,71 @@
+.form-contacts {
+  padding-top: 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 44px 60px 30px 60px;
+    border: $border-form;
+    border-radius: $border-form-radius;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 74px;
+  }
+}
+
+.form-contacts__title {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    padding: 0 30px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    color: $color-accent;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}
+
+.form-contacts__field {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+.form-contacts__label {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding: 20px;
+  }
+}
+
+.form-contacts__label::before {
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    width: 59px;
+    height: 59px;
+    top: -85%;
+    right: -20px;
+    background-color: $color-gray-100;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.form-contacts__label--tel::before {
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/form/phone-icon.svg");
+  }
+}
+
+.form-contacts__label--email::before {
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/form/mail-icon.svg");
+  }
+}

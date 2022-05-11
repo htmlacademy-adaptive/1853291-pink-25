@@ -1,7 +1,28 @@
 .field__input {
+  width: 100%;
+  min-height: 60px;
   font-family: inherit;
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
   color: $color-primary;
+  border: $border-form;
+  border-radius: $border-form-radius;
+}
+
+.field__label {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  color: $color-accent;
+  text-transform: uppercase;
+
+  display: block;
+  margin-top: 29px;
+  margin-bottom: 17px;
+  padding-left: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 20px 0 0;
+  }
 }

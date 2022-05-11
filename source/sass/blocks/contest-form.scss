@@ -35,12 +35,6 @@
   }
 }
 
-.contest-form__button-container {
-  @media (max-width: $mobile-width-only) {
-    order: 4;
-  }
-}
-
 .contest-form__app-container,
 .contest-form__achievement-container {
   background-color: $color-gray;
@@ -65,9 +59,49 @@
 
 .contest-form__group {
   padding: 42px 0;
+  border: 0;
 
   @media (min-width: $tablet-width) {
     padding: 0;
     margin-bottom: 50px;
+  }
+}
+
+.contest-form__button-container {
+  @media (max-width: $mobile-width-only) {
+    order: 4;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.contest-form__button {
+  width: 100%;
+  min-height: 60px;
+
+  @media (min-width: $tablet-width) {
+    width: 296px;
+  }
+}
+
+.contest-form__required {
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.contest-form__required span {
+  color: $color-accent;
+}
+
+.contest-form__field {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
   }
 }

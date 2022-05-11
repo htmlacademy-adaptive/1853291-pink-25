@@ -1,0 +1,30 @@
+.radio {
+  position: relative;
+}
+
+.radio__box {
+  position: absolute;
+  width: 37px;
+  height: 37px;
+  border: 2px solid $color-gray-100;
+  border-radius: 50%;
+  background-color: $color-white;
+}
+
+.radio__input[type="radio"]:checked + .radio__box::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: $color-accent;
+  top: 9px;
+  left: 9px;
+}
+
+.radio__text {
+  padding-left: 67px;
+  font-size: 18px;
+  line-height: 37px;
+  color: $color-primary;
+}

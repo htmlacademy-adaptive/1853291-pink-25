@@ -70,9 +70,23 @@
 
   @media (min-width: $tablet-width) {
     width: 620px;
+    display: grid;
   }
 
   @media (min-width: $desktop-width) {
     width: 940px;
+  }
+}
+
+.photo-card__description--special .photo-card__heading {
+  @media (min-width: $tablet-width) {
+    grid-row-start: 1;
+  }
+}
+
+.photo-card__description--special .photo-card__like {
+  @media (min-width: $tablet-width) {
+    grid-row-start: 1;
+    margin-top: 0;
   }
 }

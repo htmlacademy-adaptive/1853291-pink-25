@@ -1,0 +1,27 @@
+.checkbox {
+  position: relative;
+}
+
+.checkbox__box {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  border: $border-form;
+  border-radius: $border-form-radius;
+  background-color: $color-white;
+}
+
+.checkbox__input[type="checkbox"]:checked + .checkbox__box::before {
+  content: "";
+  position: absolute;
+  width: 35px;
+  height: 27px;
+  background-image: url("../img/form/Mobile/tick.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.checkbox__text {
+  padding-left: 53px;
+  line-height: 35px;
+}

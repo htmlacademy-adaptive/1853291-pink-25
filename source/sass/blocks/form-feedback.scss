@@ -1,0 +1,21 @@
+.form-feedback {
+  margin-top: 43px;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    border: $border-form;
+    border-radius: $border-form-radius;
+    padding: 45px 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 70px 0;
+  }
+}
+
+.form-feedback__title {
+  @media (min-width: $tablet-width) {
+    text-align: center;
+    padding: 0 40px;
+  }
+}
