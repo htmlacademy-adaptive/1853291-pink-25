@@ -1,10 +1,11 @@
 .modal {
   display: none;
   position: fixed;
-  top: 30%;
+  top: 50%;
   right: 0;
   bottom: 0;
   left: 0;
+  overflow: scroll;
 }
 
 .modal__container {
@@ -13,7 +14,7 @@
   background: $color-white;
   border-radius: 5px;
   text-align: center;
-  box-shadow: 0, 7px, 15px 0, #00010126;
+  box-shadow: 0 7px 15px 0 #00010126;
 
   @media (min-width: $tablet-width) {
     width: 460px;
@@ -87,13 +88,33 @@
 }
 
 .modal__button {
+  display: block;
   width: 280px;
   min-height: 60px;
   margin: 0 auto;
+  border: 0;
+  border-radius: 2px;
+  background-color: $color-green;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  color: $color-white;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     width: 300px;
   }
+}
+
+.modal__button:hover {
+  background-color: $color-green-dark;
+}
+
+.modal__button:active {
+  background-color: $color-green-dark;
+  color: rgba($color-white, 0.3);
 }
 
 .modal--success .modal__button-wrapper {

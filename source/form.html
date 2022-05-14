@@ -87,22 +87,19 @@
             <ul class="form-app__list">
               <li class="form-app__item">
                 <label class="form-app__field radio">
-                  <input class="radio__input visually-hidden" type="radio" name="platform" value="iOS" checked>
-                  <span class="radio__box"></span>
+                  <input class="radio__input" type="radio" name="platform" value="iOS" checked>
                   <span class="radio__text">Pink для iOS</span>
                 </label>
               </li>
               <li class="form-app__item">
                 <label class="form-app__field radio">
-                  <input class="radio__input visually-hidden" type="radio" name="platform" value="Android">
-                  <span class="radio__box"></span>
+                  <input class="radio__input" type="radio" name="platform" value="Android">
                   <span class="radio__text">Pink на Android</span>
                 </label>
               </li>
               <li class="form-app__item">
                 <label class="form-app__field radio">
-                  <input class="radio__input visually-hidden" type="radio" name="platform" value="Windows">
-                  <span class="radio__box"></span>
+                  <input class="radio__input" type="radio" name="platform" value="Windows">
                   <span class="radio__text">Windows Phone</span>
                 </label>
               </li>
@@ -126,43 +123,37 @@
             <ul class="form-achievement__list">
               <li class="form-achievement__item">
                 <label class="form-achievement__field checkbox">
-                  <input class="checkbox__input visually-hidden" type="checkbox" name="achivment" value="selfie" checked>
-                  <span class="checkbox__box"></span>
+                  <input class="checkbox__input" type="checkbox" name="achivment" value="selfie" checked>
                   <span class="checkbox__text form-input-font">Сделал селфи с акулой</span>
                 </label>
               </li>
               <li class="form-achievement__item">
                 <label class="form-achievement__field checkbox">
-                  <input class="checkbox__input visually-hidden" type="checkbox" name="achivment" value="sunburn" checked>
-                  <span class="checkbox__box"></span>
+                  <input class="checkbox__input" type="checkbox" name="achivment" value="sunburn" checked>
                   <span class="checkbox__text form-input-font">Обгорел на пляже</span>
                 </label>
               </li>
               <li class="form-achievement__item">
                 <label class="form-achievement__field checkbox">
-                  <input class="checkbox__input visually-hidden" type="checkbox" name="achivment" value="celebrity">
-                  <span class="checkbox__box"></span>
+                  <input class="checkbox__input" type="checkbox" name="achivment" value="celebrity">
                   <span class="checkbox__text form-input-font">Видел Чака Норриса</span>
                 </label>
               </li>
               <li class="form-achievement__item">
                 <label class="form-achievement__field checkbox">
-                  <input class="checkbox__input visually-hidden" type="checkbox" name="achivment" value="souvenir">
-                  <span class="checkbox__box"></span>
+                  <input class="checkbox__input" type="checkbox" name="achivment" value="souvenir">
                   <span class="checkbox__text form-input-font">Накупил сувениров</span>
                 </label>
               </li>
               <li class="form-achievement__item">
                 <label class="form-achievement__field checkbox">
-                  <input class="checkbox__input visually-hidden" type="checkbox" name="achivment" value="tower" checked>
-                  <span class="checkbox__box"></span>
+                  <input class="checkbox__input" type="checkbox" name="achivment" value="tower" checked>
                   <span class="checkbox__text form-input-font">Удержал башню</span>
                 </label>
               </li>
               <li class="form-achievement__item">
                 <label class="form-achievement__field checkbox">
-                  <input class="checkbox__input visually-hidden" type="checkbox" name="achivment" value="hotel">
-                  <span class="checkbox__box"></span>
+                  <input class="checkbox__input" type="checkbox" name="achivment" value="hotel">
                   <span class="checkbox__text form-input-font">Разгромил отель</span>
                 </label>
               </li>
@@ -221,7 +212,7 @@
         </a>
       </div>
     </footer>
-    <div class="modal modal--failure modal--close">
+    <section class="modal modal--failure modal--close">
     <div class="modal__container">
         <h2 class="modal__title">Что-то пошло не так!</h2>
         <p class="modal__description">
@@ -229,11 +220,11 @@
           скорее всего вы забыли их заполнить
         </p>
         <div class="modal__button-wrapper">
-          <button class="modal__button form-button" type="button">ок</button>
+          <button class="modal__button" type="button">ок</button>
         </div>
         </div>
-    </div>
-    <div class="modal modal--success modal--close">
+    </section>
+    <section class="modal modal--success modal--close">
       <div class="modal__container">
         <h2 class="modal__title">Ваша заявка отправлена</h2>
         <p class="modal__description">
@@ -243,10 +234,10 @@
           оповестим вас.
         </p>
         <div class="modal__button-wrapper" >
-          <button class="modal__button form-button" type="button">Закрыть окно</button>
+          <button class="modal__button" type="button">Закрыть окно</button>
         </div>
       </div>
-    </div>
+    </section>
     <script src="./js/script.js"></script>
   </body>
 </html>

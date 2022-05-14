@@ -1,15 +1,9 @@
-input[type="range"] {
+.range-bar__input {
   width: 240px;
   --webkit-appearance: none;
   --moz-appearance: none;
   appearance: none;
   background-color: transparent;
-}
-
-input[type="range"]::-webkit-slider-runnable-track {
-  height: 2px;
-  border: 0;
-  background-color: $color-black;
 
   @media (min-width: $tablet-width) {
     width: 202px;
@@ -20,22 +14,24 @@ input[type="range"]::-webkit-slider-runnable-track {
   }
 }
 
-input[type="range"]::-moz-range-track {
+.range-bar__input--active {
+  margin: 0 auto;
+}
+
+.range-bar__input::-webkit-slider-runnable-track {
   height: 2px;
   border: 0;
   background-color: $color-black;
+}
 
-  @media (min-width: $tablet-width) {
-    width: 202px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 288px;
+.range-bar__input--not-active::-webkit-slider-runnable-track {
+  @media (max-width: $mobile-width-only) {
+    display: none;
   }
 }
 
-input[type="range"]::-webkit-slider-thumb {
-  --webkit-appearance: none;
+.range-bar__input::-webkit-slider-thumb {
+  appearance: none;
   width: 14px;
   height: 14px;
   margin-top: -6px;
@@ -45,9 +41,8 @@ input[type="range"]::-webkit-slider-thumb {
   cursor: pointer;
 }
 
-
-input[type="range"]::-moz-range-thumb {
-  --webkit-appearance: none;
+.range-bar__input::-moz-range-thumb {
+  --moz-appearance: none;
   width: 14px;
   height: 14px;
   margin-top: -6px;
@@ -57,6 +52,6 @@ input[type="range"]::-moz-range-thumb {
   cursor: pointer;
 }
 
-input[type="range"]::-webkit-slider-thumb:active {
+.range-bar__input::-webkit-slider-thumb:active {
   background-color: $color-accent;
 }

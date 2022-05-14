@@ -2,8 +2,19 @@
   position: relative;
 }
 
-.checkbox__box {
+.checkbox__input {
   position: absolute;
+  margin: 0;
+  width: 35px;
+  height: 35px;
+  z-index: 1;
+  opacity: 0;
+}
+
+.checkbox__text::before {
+  content: "";
+  position: absolute;
+  left: 0;
   width: 35px;
   height: 35px;
   border: $border-form;
@@ -11,12 +22,14 @@
   background-color: $color-white;
 }
 
-.checkbox__input[type="checkbox"]:checked + .checkbox__box::before {
+.checkbox__input[type="checkbox"]:checked ~ .checkbox__text::after {
   content: "";
   position: absolute;
+  left: 0;
+  top: -5px;
   width: 35px;
   height: 27px;
-  background-image: url("../img/form/Mobile/tick.svg");
+  background-image: url("../img/form/tick.svg");
   background-repeat: no-repeat;
   background-position: center;
 }

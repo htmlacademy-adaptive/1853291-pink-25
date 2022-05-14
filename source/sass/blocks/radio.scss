@@ -2,8 +2,19 @@
   position: relative;
 }
 
-.radio__box {
+.radio__input {
   position: absolute;
+  z-index: 1;
+  margin: 0;
+  width: 37px;
+  height: 37px;
+  opacity: 0;
+}
+
+.radio__text::before {
+  content: "";
+  position: absolute;
+  left: 0;
   width: 37px;
   height: 37px;
   border: 2px solid $color-gray-100;
@@ -11,15 +22,15 @@
   background-color: $color-white;
 }
 
-.radio__input[type="radio"]:checked + .radio__box::before {
+.radio__input[type="radio"]:checked ~ .radio__text::after {
   content: "";
   position: absolute;
+  top: 3px;
+  left: 11px;
   width: 15px;
   height: 15px;
   border-radius: 50%;
   background-color: $color-accent;
-  top: 9px;
-  left: 9px;
 }
 
 .radio__text {

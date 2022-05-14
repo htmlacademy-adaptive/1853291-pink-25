@@ -1,5 +1,5 @@
 .editing-tools {
-  padding: 0 0 34px 0;
+  padding: 0;
   list-style-type: none;
 
   @media (min-width: $tablet-width) {
@@ -7,13 +7,35 @@
   }
 }
 
+.editing-controls-list__item {
+  margin-right: 35px;
+}
+
+.editing-controls-list__item:last-child {
+  margin-right: 0;
+}
+
+.editing-controls-list__button {
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
 .editing-tools__item {
+  padding-bottom: 34px;
+
   @media (min-width: $tablet-width) {
+    position: relative;
     display: flex;
     align-items: center;
     padding-top: 30px;
     padding-bottom: 30px;
+    padding-left: 55px;
     border-bottom: 1px solid rgba($color-primary, 0.1);
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 92px;
   }
 }
 
@@ -23,60 +45,51 @@
   }
 }
 
+.editing-tools__item--active {
+  text-align: center;
+}
 
-.editing-tools__button {
-  display: block;
-  width: 48px;
-  height: 48px;
-  border: 0;
-  background-color: transparent;
-  background-repeat: no-repeat;
-  background-position: center;
+.editing-tools__item--not-active {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+}
 
+.editing-tools__item::before {
   @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    left: 0;
     width: 24px;
     height: 24px;
-    margin-right: 32px;
-    margin-top: 5px;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
   @media (min-width: $desktop-width) {
     width: 48px;
     height: 48px;
-    margin-right: 54px;
   }
 }
 
-.editing-tools__button--crop {
-  background-image: url("../img/catalog/crop-mobile.svg");
-
-  @media (min-width: $tablet-width) {
-    background-image: url("../img/catalog/crop-tablet.svg");
-  }
+.editing-tools__item--crop::before {
+  background-image: url("../img/catalog/crop-tablet.svg");
 
   @media (min-width: $desktop-width) {
     background-image: url("../img/catalog/crop-desktop.svg");
   }
 }
 
-.editing-tools__button--fill {
-  background-image: url("../img/catalog/fill-mobile.svg");
-
-  @media (min-width: $tablet-width) {
-    background-image: url("../img/catalog/fill-tablet.svg");
-  }
+.editing-tools__item--fill::before {
+  background-image: url("../img/catalog/fill-tablet.svg");
 
   @media (min-width: $desktop-width) {
     background-image: url("../img/catalog/fill-desktop.svg");
   }
 }
 
-.editing-tools__button--contrast {
-  background-image: url("../img/catalog/contrast-mobile.svg");
-
-  @media (min-width: $tablet-width) {
-    background-image: url("../img/catalog/contrast-tablet.svg");
-  }
+.editing-tools__item--contrast::before {
+  background-image: url("../img/catalog/contrast-tablet.svg");
 
   @media (min-width: $desktop-width) {
     background-image: url("../img/catalog/contrast-desktop.svg");
