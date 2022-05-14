@@ -1,9 +1,57 @@
+.form-achievement {
+  border: 0;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    border: $border-form;
+    border-radius: $border-form-radius;
+    padding: 35px 60px 50px 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 54px 60px 57px 60px;
+  }
+}
+
+.form-achievement__title {
+  margin-bottom: 44px;
+  text-align: center;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  color: $color-accent;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 0 30px;
+  }
+}
+
 .form-achievement__list {
   margin: 0;
+  padding: 0;
   list-style-type: none;
 
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: repeat(3, auto);
+  }
+}
+
+.form-achievement__item {
+  margin-bottom: 47px;
+}
+
+.form-achievement__item:last-child {
+  margin-bottom: 0;
+}
+
+.form-achievement__item:nth-child(2),
+.form-achievement__item:nth-child(4),
+.form-achievement__item:nth-child(6) {
+  @media (min-width: $desktop-width) {
+    grid-row-start: 2;
   }
 }

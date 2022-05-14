@@ -1,8 +1,16 @@
+.photo-card {
+  display: flex;
+  flex-direction: column;
+}
+
 .photo-card__img {
   display: block;
 }
 
 .photo-card__description {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
   padding: 25px 17px;
 }
 
@@ -33,6 +41,7 @@
 }
 
 .photo-card__text {
+  flex-grow: 1;
   margin: 14px 0 0 0;
   padding: 0;
   font-weight: 400;
@@ -70,9 +79,23 @@
 
   @media (min-width: $tablet-width) {
     width: 620px;
+    display: grid;
   }
 
   @media (min-width: $desktop-width) {
     width: 940px;
+  }
+}
+
+.photo-card__description--special .photo-card__heading {
+  @media (min-width: $tablet-width) {
+    grid-row-start: 1;
+  }
+}
+
+.photo-card__description--special .photo-card__like {
+  @media (min-width: $tablet-width) {
+    grid-row-start: 1;
+    margin-top: 0;
   }
 }

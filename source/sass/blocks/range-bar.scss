@@ -1,0 +1,57 @@
+.range-bar__input {
+  width: 240px;
+  --webkit-appearance: none;
+  --moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+
+  @media (min-width: $tablet-width) {
+    width: 202px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 288px;
+  }
+}
+
+.range-bar__input--active {
+  margin: 0 auto;
+}
+
+.range-bar__input::-webkit-slider-runnable-track {
+  height: 2px;
+  border: 0;
+  background-color: $color-black;
+}
+
+.range-bar__input--not-active::-webkit-slider-runnable-track {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+}
+
+.range-bar__input::-webkit-slider-thumb {
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  margin-top: -6px;
+  background-color: $color-white;
+  border: 2px solid $color-accent;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range-bar__input::-moz-range-thumb {
+  --moz-appearance: none;
+  width: 14px;
+  height: 14px;
+  margin-top: -6px;
+  background-color: $color-white;
+  border: 2px solid $color-accent;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range-bar__input::-webkit-slider-thumb:active {
+  background-color: $color-accent;
+}

@@ -1,0 +1,40 @@
+.checkbox {
+  position: relative;
+}
+
+.checkbox__input {
+  position: absolute;
+  margin: 0;
+  width: 35px;
+  height: 35px;
+  z-index: 1;
+  opacity: 0;
+}
+
+.checkbox__text::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 35px;
+  height: 35px;
+  border: $border-form;
+  border-radius: $border-form-radius;
+  background-color: $color-white;
+}
+
+.checkbox__input[type="checkbox"]:checked ~ .checkbox__text::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -5px;
+  width: 35px;
+  height: 27px;
+  background-image: url("../img/form/tick.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.checkbox__text {
+  padding-left: 53px;
+  line-height: 35px;
+}

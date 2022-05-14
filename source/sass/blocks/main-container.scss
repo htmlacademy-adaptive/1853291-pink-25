@@ -1,3 +1,15 @@
 .main-container__form {
   margin-bottom: 26px;
 }
+
+.main-container__intro {
+  min-height: 237px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 440px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 394px;
+  }
+}

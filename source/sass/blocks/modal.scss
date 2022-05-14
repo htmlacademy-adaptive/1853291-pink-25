@@ -1,6 +1,45 @@
 .modal {
   display: none;
-  padding: 44px 22px 52px 22px;
+  position: fixed;
+  top: 50%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: scroll;
+}
+
+.modal__container {
+  width: 320px;
+  margin: 0 auto;
+  background: $color-white;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0 7px 15px 0 #00010126;
+
+  @media (min-width: $tablet-width) {
+    width: 460px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 780px;
+  }
+}
+
+.modal--success .modal__container {
+  padding-top: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 50px;
+  }
+}
+
+.modal--failure .modal__container {
+  padding-top: 44px;
+  padding-bottom: 52px;
+
+  @media (min-width: $tablet-width) {
+    padding: 55px 82px;
+  }
 }
 
 .modal__title {
@@ -10,6 +49,11 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 40px;
+  }
 }
 
 .modal__description {
@@ -20,4 +64,61 @@
   font-size: 14px;
   line-height: 24px;
   color: $color-primary;
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+  }
+}
+
+.modal--success .modal__description {
+  @media (min-width: $desktop-width) {
+    width: 370px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.modal--failure .modal__description {
+  @media (min-width: $desktop-width) {
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 70px;
+  }
+}
+
+.modal__button {
+  display: block;
+  width: 280px;
+  min-height: 60px;
+  margin: 0 auto;
+  border: 0;
+  border-radius: 2px;
+  background-color: $color-green;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  color: $color-white;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+  }
+}
+
+.modal__button:hover {
+  background-color: $color-green-dark;
+}
+
+.modal__button:active {
+  background-color: $color-green-dark;
+  color: rgba($color-white, 0.3);
+}
+
+.modal--success .modal__button-wrapper {
+  padding-top: 52px;
+  padding-bottom: 52px;
+  background-color: $color-gray;
 }

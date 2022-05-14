@@ -2,10 +2,16 @@ $color-primary: #283645;
 $color-white: #ffffff;
 $color-black: #000000;
 $color-gray: #f2f2f2;
+$color-gray-100: #e5e5e5;
 $color-accent: #d22856;
-$color-dark-gray: #bfc3c7;
+$color-gray-200: #bfc3c7;
 $color-primary-dark: #1d2631;
+$color-green: #2aab6d;
+$color-green-dark: #1c9b5e;
 
 $tablet-width: 660px;
 $desktop-width: 1040px;
 $mobile-width-only: 659px;
+
+$border-form: 2px solid $color-gray-100;
+$border-form-radius: 2px;
