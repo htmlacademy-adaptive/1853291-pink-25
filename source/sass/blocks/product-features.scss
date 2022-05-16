@@ -77,11 +77,19 @@
   left: 50%;
   transform: translateX(-50%);
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/product-features/make-friends@2x.png");
+  }
+
   @media (min-width: $tablet-width) {
     width: 268px;
     height: 480px;
     background-image: url("../img/product-features/friends-tablet.png");
     transform: translateX(-115%);
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/product-features/friends-tablet@2x.png");
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -175,12 +183,24 @@
 
 .product-features__item--spirit::before {
   background-image: url("../img/product-features/spirit.png");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/product-features/spirit@2x.png");
+  }
 }
 
 .product-features__item--change::before {
   background-image: url("../img/product-features/change.png");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/product-features/change@2x.png");
+  }
 }
 
 .product-features__item--friends::before {
   background-image: url("../img/product-features/friends-desktop.png");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/product-features/friends-desktop@2x.png");
+  }
 }

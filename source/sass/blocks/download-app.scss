@@ -8,12 +8,24 @@
   background-size: 320px 286px, auto 462px;
   background-position: center 38%, center 0;
 
+  @media (min-resolution: 2dppx) {
+    background-image:
+      url("../img/download-app/phone-mobile@2x.png"),
+      url("../img/download-app/back-tablet@2x.jpg");
+  }
+
   @media (min-width: $tablet-width) {
     background-image:
       url("../img/download-app/phone-tablet.png"),
       url("../img/download-app/back-desktop.jpg");
     background-size: 660px, cover;
     background-position: center 100%, 50% 50%;
+
+    @media (min-resolution: 2dppx) {
+      background-image:
+        url("../img/download-app/phone-tablet@2x.png"),
+        url("../img/download-app/back-desktop@2x.jpg");
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -22,6 +34,12 @@
       url("../img/download-app/back-desktop.jpg");
     background-size: auto, cover;
     background-position: calc(50% + 60px) 100%, center center;
+
+    @media (min-resolution: 2dppx) {
+      background-image:
+        url("../img/download-app/phone-desktop@2x.png"),
+        url("../img/download-app/back-desktop@2x.jpg");
+    }
   }
 }
 
