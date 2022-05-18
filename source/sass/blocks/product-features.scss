@@ -79,6 +79,7 @@
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/product-features/make-friends@2x.png");
+    background-size: 157px;
   }
 
   @media (min-width: $tablet-width) {
@@ -89,6 +90,7 @@
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/product-features/friends-tablet@2x.png");
+      background-size: 256px;
     }
   }
 
@@ -186,6 +188,7 @@
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/product-features/spirit@2x.png");
+    background-size: 300px;
   }
 }
 
@@ -194,6 +197,7 @@
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/product-features/change@2x.png");
+    background-size: 300px;
   }
 }
 
@@ -202,5 +206,6 @@
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/product-features/friends-desktop@2x.png");
+    background-size: 300px;
   }
 }
