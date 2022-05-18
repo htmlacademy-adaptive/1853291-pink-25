@@ -411,6 +411,7 @@
 @media (min-width: 1040px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1040px) and (min-resolution: 2dppx) {
   .download-app {
     background-image: url("../img/download-app/phone-desktop@2x.png"), url("../img/download-app/back-desktop@2x.jpg");
+    background-size: 1045px, cover;
   }
 }
 
@@ -628,6 +629,7 @@
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .product-features__list::after {
     background-image: url("../img/product-features/make-friends@2x.png");
+    background-size: 157px;
   }
 }
 @media (min-width: 660px) {
@@ -641,6 +643,7 @@
 @media (min-width: 660px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 660px) and (min-resolution: 2dppx) {
   .product-features__list::after {
     background-image: url("../img/product-features/friends-tablet@2x.png");
+    background-size: 256px;
   }
 }
 @media (min-width: 1040px) {
@@ -742,6 +745,7 @@
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .product-features__item--spirit::before {
     background-image: url("../img/product-features/spirit@2x.png");
+    background-size: 300px;
   }
 }
 
@@ -751,6 +755,7 @@
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .product-features__item--change::before {
     background-image: url("../img/product-features/change@2x.png");
+    background-size: 300px;
   }
 }
 
@@ -760,6 +765,7 @@
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .product-features__item--friends::before {
     background-image: url("../img/product-features/friends-desktop@2x.png");
+    background-size: 300px;
   }
 }
 
