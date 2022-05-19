@@ -6,7 +6,7 @@
     url("../img/download-app/back-tablet.jpg");
   background-repeat: no-repeat;
   background-size: 320px 286px, auto 462px;
-  background-position: center 38%, center 0;
+  background-position: center 40%, center 0;
 
   @media (min-resolution: 2dppx) {
     background-image:
@@ -15,6 +15,7 @@
   }
 
   @media (min-width: $tablet-width) {
+    padding-top: 110px;
     background-image:
       url("../img/download-app/phone-tablet.png"),
       url("../img/download-app/back-desktop.jpg");
@@ -33,7 +34,7 @@
       url("../img/download-app/phone-desktop.png"),
       url("../img/download-app/back-desktop.jpg");
     background-size: auto, cover;
-    background-position: calc(50% + 60px) 100%, center center;
+    background-position: calc(50% + 70px) 100%, center center;
 
     @media (min-resolution: 2dppx) {
       background-image:
@@ -45,21 +46,20 @@
 }
 
 .download-app__container {
-  padding-top: 29px;
-  padding-bottom: 38px;
+  padding-top: 25px;
+  padding-bottom: 30px;
   display: grid;
   grid-template-columns: 280px;
   justify-content: center;
 
   @media (min-width: $tablet-width) {
-    padding-top: 153px;
-    padding-bottom: 119px;
+    padding-top: 100px;
+    padding-bottom: 115px;
     grid-template-columns: 300px 320px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 114px;
-    padding-bottom: 130px;
+    padding-bottom: 122px;
     grid-template-columns: 300px 640px;
   }
 }
@@ -74,14 +74,23 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 40px 0;
+    margin: 0 0 25px 0;
     font-size: 40px;
     line-height: 48px;
   }
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 35px;
     font-size: 50px;
     line-height: 68px;
+  }
+}
+
+.download-app__slogan br {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: initial;
   }
 }
 
@@ -94,6 +103,10 @@
   line-height: 24px;
   color: $color-white;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+  }
 }
 
 .download-app__list {
@@ -101,9 +114,19 @@
   align-items: center;
   justify-content: center;
   margin-top: 32px;
-  margin-bottom: 28px;
+  margin-bottom: 23px;
   padding: 0;
   list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 42px;
+    margin-bottom: 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 70px;
+    margin-bottom: 50px;
+  }
 }
 
 .download-app__item {

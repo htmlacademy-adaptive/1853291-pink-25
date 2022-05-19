@@ -1,17 +1,9 @@
 .contacts {
-  padding-top: 50px;
-
-  @media (min-width: $tablet-width) {
-    padding-top: 55px;
-  }
+  padding-top: 45px;
 
   @media (min-width: $desktop-width) {
-    padding-top: 74px;
+    padding-top: 64px;
   }
-}
-
-.contacts__container {
-  padding-bottom: 40px;
 }
 
 .contacts__subtitle {
@@ -42,6 +34,8 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
+    padding-left: 46px;
+    padding-right: 30px;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -76,12 +70,28 @@
 }
 
 .contacts__item-title {
-  margin-top: 35px;
+  margin-top: 17px;
 
   font-weight: 700;
   font-size: 18px;
   line-height: 25px;
   color: $color-primary;
+}
+
+.contacts__item--phone .contacts__item-title {
+  margin-top: 33px;
+}
+
+.contacts__item--mail .contacts__item-title {
+  @media (min-width: $tablet-width) {
+    margin-top: 33px;
+  }
+}
+
+.contacts__item--address .contacts__item-title {
+  @media (min-width: $tablet-width) {
+    margin-top: 45px;
+  }
 }
 
 .contacts__link {
@@ -106,10 +116,10 @@
 
 .contacts__map {
   position: relative;
-  height: 320px;
+  height: 235px;
 
   @media (min-width: $tablet-width) {
-    height: 374px;
+    height: 360px;
   }
 
   @media (min-width: $desktop-width) {
@@ -127,7 +137,7 @@
   background-position: center -60px;
 
   @media (min-width: $tablet-width) {
-    background-position: center -10px;
+    background-position: -200px -20px;
   }
 
   @media (min-width: $desktop-width) {

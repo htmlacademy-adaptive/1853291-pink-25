@@ -5,6 +5,7 @@
   background-color: $color-primary;
 
   @media (min-width: $desktop-width) {
+    min-width: 650px;
     display: flex;
     justify-content: space-between;
     background-color: transparent;
@@ -48,6 +49,12 @@
     font-size: 18px;
     line-height: 18px;
     text-transform: none;
+  }
+}
+
+.nav-list__link:last-child {
+  @media (min-width: $desktop-width) {
+    padding-right: 0;
   }
 }
 
