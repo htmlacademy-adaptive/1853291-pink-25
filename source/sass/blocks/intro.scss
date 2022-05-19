@@ -6,9 +6,17 @@
   background-size: cover;
   background-position: center 0;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/download-app/back-tablet@2x.jpg");
+  }
+
   @media (min-width: $tablet-width) {
     background-image: url("../img/download-app/back-desktop.jpg");
     background-position: center center;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/download-app/back-desktop@2x.jpg");
+    }
   }
 }
 

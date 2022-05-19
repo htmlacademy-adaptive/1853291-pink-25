@@ -1,10 +1,11 @@
 .modal {
-  display: none;
   position: fixed;
-  top: 50%;
+  top: 0;
   right: 0;
   bottom: 0;
   left: 0;
+  display: grid;
+  place-content: center;
   overflow: scroll;
 }
 
@@ -121,4 +122,8 @@
   padding-top: 52px;
   padding-bottom: 52px;
   background-color: $color-gray;
+}
+
+.modal--close {
+  display: none;
 }
