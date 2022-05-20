@@ -1,13 +1,15 @@
 .form-contacts {
-  padding-top: 0;
+  padding-top: 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 44px 60px 30px 60px;
+    padding: 44px 60px 0 60px;
     border: $border-form;
     border-radius: $border-form-radius;
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 30px;
+    margin-bottom: 60px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 74px;
@@ -27,6 +29,10 @@
     text-transform: uppercase;
     text-align: center;
   }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .form-contacts__field {
@@ -42,6 +48,10 @@
   @media (min-width: $tablet-width) {
     padding: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 10px;
+  }
 }
 
 .form-contacts__label::before {
@@ -55,6 +65,10 @@
     background-color: $color-gray-100;
     background-repeat: no-repeat;
     background-position: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -60px;
   }
 }
 

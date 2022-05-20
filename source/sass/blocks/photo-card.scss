@@ -11,7 +11,12 @@
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  padding: 25px 17px;
+  padding: 17px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 155px;
+    padding: 25px;
+  }
 }
 
 .photo-card__heading {
@@ -42,7 +47,7 @@
 
 .photo-card__text {
   flex-grow: 1;
-  margin: 14px 0 0 0;
+  margin: 0;
   padding: 0;
   font-weight: 400;
   font-size: 14px;
@@ -51,7 +56,7 @@
 }
 
 .photo-card__like {
-  margin-top: 27px;
+  margin-top: 10px;
 }
 
 .photo-card__img-container {
@@ -74,6 +79,7 @@
   background-color: $color-gray;
   width: 280px;
   margin: 0 auto;
+  padding: 20px 13px;
 
   @media (min-width: $tablet-width) {
     width: 620px;

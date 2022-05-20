@@ -5,6 +5,14 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    padding: 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 }
 
 .socials-list__item {
@@ -16,6 +24,7 @@
 }
 
 .socials-list__link {
+  position: relative;
   display: block;
   width: 54px;
   height: 54px;
@@ -34,14 +43,12 @@
   opacity: 0.3;
 }
 
-.socials-list__link--vk {
-  background-image: url("../img/socials/vk.svg");
+.socials-list__icon {
+  position: absolute;
+  top: 15px;
+  left: 13px;
 }
 
-.socials-list__link--telegram {
-  background-image: url("../img/socials/telegram.svg");
-}
-
-.socials-list__link--youtube {
-  background-image: url("../img/socials/youtube.svg");
+.socials-list__icon--youtube {
+  left: 16px;
 }

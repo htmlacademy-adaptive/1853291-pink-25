@@ -1,15 +1,17 @@
 .form-feedback {
-  margin-top: 43px;
+  margin-top: 35px;
   padding: 0;
 
   @media (min-width: $tablet-width) {
+    margin-top: 0;
     border: $border-form;
     border-radius: $border-form-radius;
     padding: 45px 60px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 0 70px 0;
+    padding-top: 30px;
+    margin: 0 0 60px 0;
   }
 }
 

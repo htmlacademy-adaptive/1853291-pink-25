@@ -145,16 +145,13 @@
   background-repeat: no-repeat;
 }
 
-.download-app__link--apple {
-  background-image: url("../img/platforms/apple-logo.svg");
-}
 
 .download-app__link--android {
-  background-image: url("../img/platforms/android-logo.svg");
+  padding-top: 5px;
 }
 
 .download-app__link--windows {
-  background-image: url("../img/platforms/windows-logo.svg");
+  padding-top: 10px;
 }
 
 .download-app__button {

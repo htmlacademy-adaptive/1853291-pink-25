@@ -30,12 +30,12 @@
   color: $color-white;
 
   @media (min-width: $tablet-width) {
-    padding-top: 121px;
+    padding-top: 180px;
     font-size: 50px;
     line-height: 68px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 134px;
+    padding-top: 170px;
   }
 }

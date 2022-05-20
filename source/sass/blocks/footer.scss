@@ -29,3 +29,15 @@
 .footer__logo:active {
   opacity: 0.3;
 }
+
+.footer--form {
+  padding-top: 30px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 20px;
+  }
+}

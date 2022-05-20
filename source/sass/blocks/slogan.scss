@@ -1,7 +1,7 @@
 .slogan {
   margin-top: 0;
   margin-bottom: 0;
-  padding: 54px 0 60px 0;
+  padding: 45px 0 0 0;
 
   font-weight: 400;
   font-size: 14px;
@@ -10,7 +10,35 @@
   color: $color-primary;
 
   @media (min-width: $tablet-width) {
+    padding: 90px 50px 0 50px;
     font-size: 18px;
     line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 90px 80px 85px 80px;
+  }
+}
+
+.slogan--extended {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    padding: 0 50px 75px 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: initial;
+  }
+}
+
+.slogan--catalog {
+  text-align: center;
+  padding: 30px 15px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    padding: 80px 80px 65px 80px;
   }
 }
