@@ -19,14 +19,16 @@
 }
 
 .footer__logo {
+  color: $color-primary;
   background-color: $color-white;
 }
 
-.footer__logo:hover svg {
-  fill: $color-accent;
+.footer__logo:hover {
+  color: $color-accent;
 }
 
 .footer__logo:active {
+  color: $color-primary;
   opacity: 0.3;
 }
 

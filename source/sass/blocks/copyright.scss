@@ -10,19 +10,21 @@
   text-decoration: none;
   cursor: pointer;
 
-  svg {
-    margin-left: 15px;
-  }
-
   @media (min-width: $desktop-width) {
     font-size: 18px;
   }
 }
 
+.copyright__icon {
+  margin-left: 15px;
+  color: $color-accent;
+}
+
+
 .copyright__link:hover .copyright__icon {
-  fill: $color-gray-100;
+  color: $color-primary;
 }
 
 .copyright__link:active .copyright__icon {
-  fill: $color-gray-200;
+  color: $color-gray-200;
 }

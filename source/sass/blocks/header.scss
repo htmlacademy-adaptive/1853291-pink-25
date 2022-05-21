@@ -64,6 +64,7 @@
 
 .header__logo {
   display: block;
+  color: $color-white;
 
   @media (max-width: $mobile-width-only) {
     .header__logo--tablet {
@@ -100,8 +101,12 @@
   }
 }
 
-.header__logo:hover svg {
-  fill: $color-accent;
+.header__logo:hover {
+  color: $color-accent;
+}
+
+.header__logo:active {
+  opacity: 0.3;
 }
 
 .header__nav--closed .header__list {
