@@ -7,7 +7,7 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
-    padding: 36px 0;
+    padding-top: 0;
     justify-content: space-between;
     align-items: center;
   }
@@ -19,13 +19,27 @@
 }
 
 .footer__logo {
+  color: $color-primary;
   background-color: $color-white;
 }
 
-.footer__logo:hover svg {
-  fill: $color-accent;
+.footer__logo:hover {
+  color: $color-accent;
 }
 
 .footer__logo:active {
+  color: $color-primary;
   opacity: 0.3;
+}
+
+.footer--form {
+  padding-top: 30px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 20px;
+  }
 }

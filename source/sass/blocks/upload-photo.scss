@@ -1,6 +1,18 @@
+.upload-photo__slogan {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 60px 0 52px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  color: $color-primary;
+}
+
 .upload-photo__form {
   margin: 0;
-  padding: 20px 0 40px 0;
+  padding: 20px 0;
   background-color: $color-gray;
 
   display: grid;
@@ -32,7 +44,7 @@
 
 .upload-photo__editing-controls {
   list-style-type: none;
-  margin: 0 0 39px 0;
+  margin: 0 0 15px 0;
   padding: 0;
   display: flex;
   justify-content: center;

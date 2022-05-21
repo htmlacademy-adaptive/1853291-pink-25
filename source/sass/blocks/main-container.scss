@@ -1,5 +1,9 @@
 .main-container__form {
   margin-bottom: 26px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .main-container__intro {

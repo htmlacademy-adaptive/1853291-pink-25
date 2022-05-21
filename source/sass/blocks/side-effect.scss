@@ -20,17 +20,18 @@
 .side-effect::before {
   content: "";
   width: 238px;
-  height: 326px;
+  height: 366px;
   background-image: url("../img/side-effect/side-effect.svg");
   background-repeat: no-repeat;
-  background-position: center 50px;
+  background-position: center 60px;
   background-size: 238px 276px;
 
   @media (min-width: $desktop-width) {
     content: "";
     width: 298px;
-    height: 433px;
+    height: 420px;
     background-size: 298px 345px;
+    background-position-y: 10px;
   }
 }
 
@@ -43,8 +44,6 @@
   line-height: 24px;
 
   @media (min-width: $desktop-width) {
-    padding: 115px 0 120px 72px;
-
     font-size: 18px;
     line-height: 30px;
   }
@@ -52,7 +51,7 @@
 
 .side-effect__title {
   @media (min-width: $tablet-width) {
-    margin: 0 0 24px 0;
+    margin: 0 0 10px 0;
 
     font-weight: 700;
     font-size: 30px;
@@ -60,8 +59,15 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 30px;
     font-size: 30px;
     line-height: 30px;
+  }
+}
+
+.side-effect__title br {
+  @media (min-width: $desktop-width) {
+    display: none;
   }
 }
 
@@ -69,7 +75,11 @@
   color: $color-primary;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 24px 0;
+    margin: 0 0 10px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 30px;
   }
 }
 

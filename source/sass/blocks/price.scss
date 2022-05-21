@@ -1,17 +1,17 @@
 .price {
   overflow: hidden;
   position: relative;
-  padding-top: 80px;
+  padding-top: 102px;
   background-color: $color-gray;
 
   @media (min-width: $tablet-width) {
-    padding-top: 160px;
+    padding-top: 95px;
     padding-bottom: 70px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 160px;
+    padding-bottom: 90px;
   }
 }
 
@@ -51,7 +51,8 @@
 }
 
 .price__pagination {
-  padding: 50px;
+  padding-top: 30px;
+  padding-bottom: 45px;
   text-align: center;
   background-color: $color-gray;
 

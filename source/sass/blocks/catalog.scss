@@ -1,13 +1,10 @@
-.catalog {
-  padding-top: 50px;
-}
 
 .catalog__panorama {
   overflow: hidden;
   margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 50px;
+    margin-bottom: 55px;
   }
 }
 

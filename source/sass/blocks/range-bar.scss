@@ -14,8 +14,10 @@
   }
 }
 
-.range-bar__input--active {
-  margin: 0 auto;
+.range-bar__input::-moz-range-track {
+  height: 2px;
+  border: 0;
+  background-color: $color-black;
 }
 
 .range-bar__input::-webkit-slider-runnable-track {
@@ -53,5 +55,9 @@
 }
 
 .range-bar__input::-webkit-slider-thumb:active {
+  background-color: $color-accent;
+}
+
+.range-bar__input::-moz-range-thumb:active {
   background-color: $color-accent;
 }

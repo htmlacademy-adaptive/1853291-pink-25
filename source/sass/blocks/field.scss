@@ -18,11 +18,27 @@
   text-transform: uppercase;
 
   display: block;
-  margin-top: 29px;
-  margin-bottom: 17px;
+  margin-top: 20px;
+  margin-bottom: 5px;
   padding-left: 20px;
 
   @media (min-width: $tablet-width) {
+    padding-left: 0;
     margin: 0 20px 0 0;
+  }
+}
+
+.fiel-label--lastname {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.field__input--textarea {
+  @media (min-width: $tablet-width) {
+    height: 190px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 124px;
   }
 }

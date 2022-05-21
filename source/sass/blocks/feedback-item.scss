@@ -11,7 +11,7 @@
     background-image: url("../img/feedback/quotes.svg");
     background-repeat: no-repeat;
     top: 76px;
-    left: 45%;
+    left: 43%;
   }
 }
 
@@ -22,7 +22,7 @@
 }
 
 .feedback-item__author {
-  margin: 0 0 31px 0;
+  margin: 0 0 15px 0;
 
   font-weight: 700;
   font-size: 18px;
@@ -30,8 +30,13 @@
   color: $color-black;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 17px 0;
+    margin: 0;
     order: 1;
+    font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 24px;
   }
 }
 
@@ -45,9 +50,13 @@
     order: 1;
 
     font-weight: 400;
-    font-size: 18px;
+    font-size: 14px;
     line-height: 30px;
     color: $color-primary;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
   }
 }
 
@@ -60,7 +69,7 @@
   color: $color-primary;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 50px;
+    margin-bottom: 35px;
     order: 0;
 
     font-weight: 400;
@@ -70,8 +79,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 auto 50px;
-    padding-left: 105px;
-    padding-right: 105px;
+    margin: 0 auto 30px;
+    padding-left: 70px;
+    padding-right: 70px;
   }
 }

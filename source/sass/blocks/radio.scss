@@ -38,4 +38,8 @@
   font-size: 18px;
   line-height: 37px;
   color: $color-primary;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 57px;
+  }
 }
