@@ -38,7 +38,7 @@ const html = () => {
 
 // Scripts
 
-const script = () => {
+export const script = () => {
   return gulp.src('source/js/script.js')
     .pipe(gulp.dest('build/js'))
 }
