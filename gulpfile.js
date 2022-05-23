@@ -6,6 +6,7 @@ import csso from 'postcss-csso';
 import rename from 'gulp-rename';
 import autoprefixer from 'autoprefixer';
 import htmlmin from 'gulp-htmlmin';
+import terser from 'gulp-terser';
 import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgo';
 import svgstore from 'gulp-svgstore';
@@ -40,6 +41,7 @@ const html = () => {
 
 export const script = () => {
   return gulp.src('source/js/script.js')
+    .pipe(terser())
     .pipe(gulp.dest('build/js'))
 }
 
