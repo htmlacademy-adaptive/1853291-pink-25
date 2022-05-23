@@ -71,6 +71,10 @@
   line-height: 25px;
   color: $color-primary;
 
+  @media (min-width: $tablet-width) {
+    margin-top: 33px;
+  }
+
   @media (min-width: $desktop-width) {
     margin-bottom: 25px;
   }
