@@ -1,21 +1,5 @@
-.feedback {
-  position: relative;
-}
-
-.feedback::before {
-  @media (min-width: $desktop-width) {
-    content: "";
-    position: absolute;
-    width: 79px;
-    height: 62px;
-    background-image: url("../img/feedback/quotes.svg");
-    background-repeat: no-repeat;
-    top: 76px;
-    left: 43%;
-  }
-}
-
 .feedback-item {
+  position: relative;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -80,7 +64,31 @@
 
   @media (min-width: $desktop-width) {
     margin: 0 auto 30px;
-    padding-left: 70px;
-    padding-right: 70px;
+    padding-left: 75px;
+    padding-right: 75px;
   }
+}
+
+.feedback-item__control {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    position: absolute;
+    width: 22px;
+    height: 41px;
+    left: 0;
+    top: 15%;
+    border: 0;
+    background-color: transparent;
+    background-image: url("../img/feedback/slider-control.svg");
+    background-position: center;
+    cursor: pointer;
+  }
+}
+
+.feedback-item__control--next {
+  left: auto;
+  right: 0;
+  transform: rotate(180deg);
 }

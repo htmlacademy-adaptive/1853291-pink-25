@@ -64,16 +64,12 @@
 }
 
 .contacts__item-title {
-  margin-top: 17px;
+  margin-top: 33px;
 
   font-weight: 700;
   font-size: 18px;
   line-height: 25px;
   color: $color-primary;
-
-  @media (min-width: $tablet-width) {
-    margin-top: 33px;
-  }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 25px;

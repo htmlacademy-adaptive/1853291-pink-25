@@ -110,9 +110,9 @@
 }
 
 .download-app__list {
+  max-width: 204px;
   display: flex;
   align-items: center;
-  justify-content: center;
   margin-top: 32px;
   margin-bottom: 23px;
   padding: 0;
@@ -130,7 +130,11 @@
 }
 
 .download-app__item {
-  margin-right: 35px;
+  margin-right: 25px;
+}
+
+.download-app__item:first-child {
+  padding-left: 40px;
 }
 
 .download-app__item:last-child {

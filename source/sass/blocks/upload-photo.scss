@@ -1,13 +1,22 @@
 .upload-photo__slogan {
   margin-top: 0;
   margin-bottom: 0;
-  padding: 60px 0 52px;
+  padding: 45px 0 40px;
 
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
   text-align: center;
   color: $color-primary;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    padding: 65px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 60px 0;
+  }
 }
 
 .upload-photo__form {
@@ -20,7 +29,7 @@
   justify-content: center;
 
   @media (min-width: $tablet-width) {
-    padding: 57px 0 57px 0;
+    padding: 57px 0 50px 20px;
     grid-template-columns: 300px 300px;
     gap: 45px;
   }
@@ -59,11 +68,12 @@
   padding-top: 38px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 37px;
+    padding-top: 57px;
     grid-column-start: 2;
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 135px;
     display: flex;
     justify-content: space-between;
   }
@@ -77,6 +87,7 @@
   @media (min-width: $tablet-width) {
     width: 300px;
     height: 400px;
+    margin-bottom: 0;
   }
 }
 
@@ -94,12 +105,15 @@
   background-color: transparent;
   cursor: pointer;
 
-  @media (min-width: $desktop-width) {
-    font-size: 21px;
+  @media (min-width: $tablet-width) {
+    width: 260px;
+    margin-bottom: 25px;
   }
 
   @media (min-width: $desktop-width) {
     width: 183px;
+    font-size: 21px;
+    margin-bottom: 0;
   }
 }
 
@@ -120,6 +134,10 @@
 .upload-photo__button--cancel {
   color: rgba($color-primary, 0.1);
   border: 3px solid rgba($color-primary, 0.1);
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .upload-photo__button--cancel:hover {

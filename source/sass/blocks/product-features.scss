@@ -29,8 +29,6 @@
 }
 
 .product-features__subtitle-container br {
-  display: none;
-
   @media (min-width: $tablet-width) {
     display: inline;
   }
@@ -187,9 +185,17 @@
   }
 }
 
-.product-features__description br {
+.product-features__br--mobile {
   @media (min-width: $tablet-width) {
     display: none;
+  }
+}
+
+.product-features__br--desktop {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
   }
 }
 

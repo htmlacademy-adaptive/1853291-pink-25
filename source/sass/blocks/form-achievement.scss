@@ -29,6 +29,12 @@
   }
 }
 
+.form-achievement__title br {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
 .form-achievement__list {
   margin: 0;
   padding: 0;

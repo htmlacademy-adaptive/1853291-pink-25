@@ -44,6 +44,16 @@
   }
 }
 
+.contest-form__group {
+  padding: 35px 0 45px 0;
+  border: 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin-bottom: 50px;
+  }
+}
+
 .contest-form__user-info {
   @media (min-width: $tablet-width) {
     margin-bottom: 5px;
@@ -58,16 +68,6 @@
 .contest-form__app {
   @media (min-width: $desktop-width) {
     width: 435px;
-  }
-}
-
-.contest-form__group {
-  padding: 35px 0 45px 0;
-  border: 0;
-
-  @media (min-width: $tablet-width) {
-    padding: 0;
-    margin-bottom: 50px;
   }
 }
 
