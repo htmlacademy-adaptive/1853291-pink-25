@@ -8,6 +8,8 @@
   color: $color-primary;
   border: $border-form;
   border-radius: $border-form-radius;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .field__label {
@@ -35,6 +37,7 @@
 
 .field__input--textarea {
   height: 199px;
+  padding-top: 20px;
 
   @media (min-width: $tablet-width) {
     height: 190px;
