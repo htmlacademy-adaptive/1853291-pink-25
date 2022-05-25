@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Пинк: Конкурс</title>
-    <link rel="icon" type="img/svg" sizes="32x32" href="favicon32.svg">
+    <link rel="icon" type="img/svg" sizes="32x32" href="favicon32.ico">
     <link rel="apple-touch-icon" type="img/png" sizes="152x152" href="img/favicons/favicon152.png">
     <link rel="stylesheet" href="./css/style.min.css">
     <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2" crossorigin>
@@ -114,7 +114,7 @@
           </div>
           <div class="contest-form__field field">
             <label for="firstname-id" class="field__label fiel-label--firstname">Имя:</label>
-            <input class="field__input" type="text" name="firstname" id="firstname-id" placeholder="Укажите имя *" required>
+            <input class="field__input" type="text" name="firstname" id="firstname-id" placeholder="Введите ваше имя *" required>
           </div>
           <div class="contest-form__field field">
             <label for="middlename-id" class="field__label fiel-label--middlename">Отчество:</label>
@@ -148,7 +148,7 @@
         </div>
         <fieldset class="contest-form__group contest-form__contacts form-contacts container">
           <legend class="form-contacts__title">Контактная информация</legend>
-          <div class="form-contacts__field field">
+          <div class="form-contacts__field form-contacts__field--phone field">
             <label for="tel-id" class="field__label form-contacts__label form-contacts__label--tel">Номер телефона</label>
             <input class="field__input form-contacts__input" type="tel" name="tel" id="tel-id" placeholder="Номер, пожалуйста">
           </div>
@@ -159,7 +159,9 @@
         </fieldset>
         <div class="contest-form__group contest-form__achievement-container">
           <fieldset class="contest-form__achievement form-achievement container">
-            <legend class="form-achievement__title">Ваши безбашенные достижения в путешествии</legend>
+            <legend class="form-achievement__title">
+              Ваши безбашенные <br>
+              &nbsp;достижения в путешествии</legend>
             <ul class="form-achievement__list">
               <li class="form-achievement__item">
                 <label class="form-achievement__field checkbox">
@@ -206,9 +208,9 @@
         </fieldset>
         <div class="contest-form__group contest-form__button-container container">
           <button class="contest-form__button form-button" type="submit">Отправить форму</button>
-          <p class="contest-form__required contest-form__required">
+          <p class="contest-form__required">
             <span>*</span>
-            — обязательные поля
+            — обязательные <span>для заполнения</span> поля
           </p>
         </div>
       </form>

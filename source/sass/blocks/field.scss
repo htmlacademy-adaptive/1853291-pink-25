@@ -8,6 +8,8 @@
   color: $color-primary;
   border: $border-form;
   border-radius: $border-form-radius;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .field__label {
@@ -34,6 +36,9 @@
 }
 
 .field__input--textarea {
+  height: 199px;
+  padding-top: 20px;
+
   @media (min-width: $tablet-width) {
     height: 190px;
   }
@@ -41,4 +46,18 @@
   @media (min-width: $desktop-width) {
     height: 124px;
   }
+}
+
+.field:hover .field__input {
+  border-color: $color-primary;
+}
+
+.field__input:focus-visible {
+  border-color: $color-accent;
+  outline: none;
+}
+
+.field__input:not(:placeholder-shown) {
+  border-color: $color-accent;
+  outline: none;
 }

@@ -14,8 +14,8 @@
     position: relative;
     display: flex;
     align-items: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 23px;
+    padding-bottom: 21px;
     padding-left: 55px;
     border-bottom: 1px solid rgba($color-primary, 0.1);
   }
@@ -27,7 +27,7 @@
 
 .editing-tools__item:first-child {
   @media (min-width: $tablet-width) {
-    padding-top: 0;
+    padding-top: 11px;
   }
 }
 
@@ -45,7 +45,7 @@
   @media (min-width: $tablet-width) {
     content: "";
     position: absolute;
-    left: 0;
+    left: 5px;
     width: 24px;
     height: 24px;
     background-repeat: no-repeat;
@@ -55,6 +55,7 @@
   @media (min-width: $desktop-width) {
     width: 48px;
     height: 48px;
+    left: 0;
   }
 }
 

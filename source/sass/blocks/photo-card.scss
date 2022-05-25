@@ -11,7 +11,8 @@
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  padding: 17px;
+  padding: 17px 17px 20px 17px;
+  min-height: 121px;
 
   @media (min-width: $tablet-width) {
     min-height: 155px;
@@ -69,24 +70,59 @@
   display: block;
   width: 100%;
   object-fit: cover;
+  height: 137px;
 
   @media (min-width: $tablet-width) {
+    height: 509px;
     max-width: 1200px;
   }
 }
+
+.photo-card__picture--special {
+  position: relative;
+}
+
+.photo-card__picture--special::before {
+  position: absolute;
+  content: "Панорама дня";
+  top: 0;
+  right: 20px;
+  width: 140px;
+  height: 36px;
+  color: $color-white;
+  background-color: $color-accent;
+  text-align: center;
+  padding-top: 5px;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    top: 57px;
+    left: calc(50% + 170px);
+  }
+
+  @media (min-width: $desktop-width) {
+    left: calc(50% + 330px);
+  }
+}
+
 
 .photo-card__description--special {
   background-color: $color-gray;
   width: 280px;
   margin: 0 auto;
-  padding: 20px 13px;
+  padding: 19px 0 18px 17px;
 
   @media (min-width: $tablet-width) {
+    min-height: 121px;
     width: 620px;
     display: grid;
+    padding-left: 27px;
   }
 
   @media (min-width: $desktop-width) {
+    min-height: 96px;
     width: 940px;
   }
 }
@@ -101,5 +137,14 @@
   @media (min-width: $tablet-width) {
     grid-row-start: 1;
     margin-top: 0;
+    justify-self: end;
+    padding-right: 20px;
+  }
+}
+
+.photo-card__description--special .photo-card__text {
+  @media (min-width: $tablet-width) {
+    grid-column-start: 1;
+    grid-column-end: 3;
   }
 }

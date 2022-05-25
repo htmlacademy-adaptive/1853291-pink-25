@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Пинк: Галерея</title>
     <link rel="stylesheet" href="./css/style.min.css">
-    <link rel="icon" type="img/svg" sizes="32x32" href="favicon32.svg">
+    <link rel="icon" type="img/svg" sizes="32x32" href="favicon32.ico">
     <link rel="apple-touch-icon" type="img/png" sizes="152x152" href="img/favicons/favicon152.png">
     <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/opensansbold.woff2" as="font" type="font/woff2" crossorigin>
@@ -105,7 +105,8 @@
     </header>
     <main class="main-container">
       <div class="main-container__intro intro">
-        <h1 class="intro__title intro__title--catalog container">Фотографии пользователей</h1>
+        <h1 class="intro__title intro__title--catalog container">Фотографии <br>
+          пользователей</h1>
       </div>
       <section class="catalog">
         <p class="catalog__slogan slogan--catalog container">
@@ -115,11 +116,11 @@
         </p>
         <div class="catalog__panorama photo-card photo-card--special">
           <div class="catalog__panorama-img photo-card__img-container">
-            <picture>
+            <picture class="photo-card__picture--special">
               <source media="(min-width: 660px)" type="img/webp" srcset="img/catalog/photo-card/panorama-desktop@1x.webp, img/catalog/photo-card/panorama-desktop@2x.webp 2x">
               <source type="img/webp" srcset="img/catalog/photo-card/panorama-mobile@1x.webp, img/catalog/photo-card/panorama-mobile@2x.webp 2x">
               <source media="(min-width: 660px)" srcset="img/catalog/photo-card/panorama-desktop@1x.jpg, img/catalog/photo-card/panorama-desktop@2x.jpg 2x">
-              <img class="photo-card__img photo-card__img--special" src="img/catalog/photo-card/panorama-mobile@1x.jpg" srcset="img/catalog/photo-card/panorama-mobile@2x.jpg 2x" alt="Подвесной мост для пешеходов в скайпарке Сочи.">
+              <img class ="photo-card__img--special" src="img/catalog/photo-card/panorama-mobile@1x.jpg" srcset="img/catalog/photo-card/panorama-mobile@2x.jpg 2x" alt="Подвесной мост для пешеходов в скайпарке Сочи.">
             </picture>
           </div>
           <div class="photo-card__description photo-card__description--special">
@@ -131,9 +132,8 @@
             </div>
             <p class="photo-card__text">
               Прыгать или нет? Напишите в
-              комментарии свой совет и
-              смотрите прямую трансляцию в
-              перископе, задавайте свои вопросы!
+              комментарии свой совет и смотрите&nbsp;прямую трансляцию в
+              перископе, задавайте&nbsp;свои&nbsp;вопросы!
             </p>
             <div class="photo-card__like like">
               <button class="like__button" type="button">
@@ -384,7 +384,7 @@
         </form>
       </section>
     </main>
-    <footer class="footer container">
+    <footer class="footer footer--catalog container">
       <a class="footer__logo" href="#">
         <svg width="145" height="40" viewBox="0 0 145 40" fill="none" aria-hidden="true">
           <use xlink:href="#footer-logo"></use>

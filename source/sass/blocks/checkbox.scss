@@ -1,5 +1,6 @@
 .checkbox {
   position: relative;
+  display: block;
 }
 
 .checkbox__input {
@@ -14,6 +15,7 @@
 .checkbox__text::before {
   content: "";
   position: absolute;
+  top: 0;
   left: 0;
   width: 37px;
   height: 37px;
@@ -26,7 +28,7 @@
   content: "";
   position: absolute;
   left: 0;
-  top: -7px;
+  top: 0;
   width: 37px;
   height: 37px;
   background-image: url("../img/form/tick.svg");
@@ -35,6 +37,23 @@
 }
 
 .checkbox__text {
-  padding-left: 53px;
+  display: block;
+  padding-left: 60px;
   line-height: 35px;
+}
+
+.checkbox:hover .checkbox__text::before {
+  border-color: $color-primary;
+}
+
+.checkbox:focus-visible + .checkbox__text::before {
+  border-color: $color-accent;
+}
+
+.checkbox:active .checkbox__text::before {
+  border-color: $color-accent;
+}
+
+.checkbox__input[type="checkbox"]:focus-visible .checkbox__text::before {
+  border-color: $color-accent;
 }

@@ -1,4 +1,5 @@
 .feedback {
+  position: relative;
   padding: 40px 0 30px 0;
 
   @media (min-width: $tablet-width) {
@@ -8,6 +9,19 @@
   @media (min-width: $desktop-width) {
     padding-top: 190px;
     padding-bottom: 35px;
+  }
+}
+
+.feedback::before {
+  @media (min-width: $desktop-width) {
+    content: "";
+    position: absolute;
+    width: 79px;
+    height: 62px;
+    background-image: url("../img/feedback/quotes.svg");
+    background-repeat: no-repeat;
+    top: 76px;
+    left: 46%;
   }
 }
 
@@ -26,33 +40,4 @@
   @media (min-width: $tablet-width) {
     padding-bottom: 20px;
   }
-}
-
-
-.feedback-item {
-  position: relative;
-}
-
-.feedback-item__control {
-  display: none;
-
-  @media (min-width: $desktop-width) {
-    display: block;
-    position: absolute;
-    width: 22px;
-    height: 41px;
-    left: -30px;
-    top: 15%;
-    border: 0;
-    background-color: transparent;
-    background-image: url("../img/feedback/slider-control.svg");
-    background-position: center;
-    cursor: pointer;
-  }
-}
-
-.feedback-item__control--next {
-  left: auto;
-  right: 30px;
-  transform: rotate(180deg);
 }
