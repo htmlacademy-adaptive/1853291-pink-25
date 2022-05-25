@@ -1,15 +1,9 @@
-.editing-controls-list__item {
-  margin-right: 35px;
-}
-
-.editing-controls-list__item:last-child {
-  margin-right: 0;
-}
-
 .editing-controls-list__button {
   border: 0;
   background-color: transparent;
   cursor: pointer;
+  width: 56px;
+  height: 50px;
 }
 
 .editing-controls-list__button--active {

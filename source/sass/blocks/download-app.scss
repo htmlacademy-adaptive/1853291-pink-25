@@ -53,12 +53,13 @@
   justify-content: center;
 
   @media (min-width: $tablet-width) {
-    padding-top: 100px;
+    padding-top: 90px;
     padding-bottom: 115px;
     grid-template-columns: 300px 320px;
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 100px;
     padding-bottom: 122px;
     grid-template-columns: 300px 640px;
   }
@@ -74,7 +75,7 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 25px 0;
+    margin: 0 0 35px 0;
     font-size: 40px;
     line-height: 48px;
   }

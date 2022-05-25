@@ -1,5 +1,6 @@
 .radio {
   position: relative;
+  display: block;
 }
 
 .radio__input {
@@ -14,6 +15,7 @@
 .radio__text::before {
   content: "";
   position: absolute;
+  top: 0;
   left: 0;
   width: 37px;
   height: 37px;
@@ -25,7 +27,7 @@
 .radio__input[type="radio"]:checked ~ .radio__text::after {
   content: "";
   position: absolute;
-  top: 3px;
+  top: 10px;
   left: 11px;
   width: 15px;
   height: 15px;
@@ -33,7 +35,16 @@
   background-color: $color-accent;
 }
 
+.radio:hover .radio__text::before {
+  border-color: $color-primary;
+}
+
+.radio:active .radio__text::before {
+  border-color: $color-accent;
+}
+
 .radio__text {
+  display: block;
   padding-left: 67px;
   font-size: 18px;
   line-height: 37px;

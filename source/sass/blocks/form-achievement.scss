@@ -9,12 +9,12 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 30px 60px 10px 60px;
+    padding: 30px 53px 10px;
   }
 }
 
 .form-achievement__title {
-  margin-bottom: 38px;
+  margin: 0 auto 42px;
   text-align: center;
 
   font-weight: 400;
@@ -24,7 +24,7 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 15px 0;
+    margin: 0 auto 15px;
     padding: 0 30px;
   }
 }
