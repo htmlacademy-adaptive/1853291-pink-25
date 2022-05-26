@@ -98,6 +98,7 @@
   min-height: 55px;
   margin-bottom: 12px;
   text-align: center;
+  font-family: "Open Sans", "Helvetica", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
@@ -149,5 +150,5 @@
 .upload-photo__button--cancel:active {
   color: rgba($color-white, 0.3);
   background-color: rgba($color-primary, 0.3);
-  border: 3px solid rgba($color-primary, 0.3);
+  border: 3px solid transparent;
 }
