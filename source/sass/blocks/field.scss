@@ -12,6 +12,15 @@
   padding-right: 20px;
 }
 
+.field__input::placeholder {
+  color: $color-primary;
+}
+
+.field__input::-moz-placeholder {
+  color: $color-primary;
+  opacity: 1;
+}
+
 .field__label {
   font-weight: 400;
   font-size: 14px;
@@ -30,7 +39,7 @@
   }
 }
 
-.fiel-label--lastname {
+.field__label--lastname {
   margin-top: 0;
   margin-bottom: 5px;
 }
@@ -52,12 +61,11 @@
   border-color: $color-primary;
 }
 
-.field__input:focus-visible {
+.field__input:focus {
   border-color: $color-accent;
-  outline: none;
+  outline: 0;
 }
 
-.field__input:not(:placeholder-shown) {
+.field:hover .field__input:not(:placeholder-shown) {
   border-color: $color-accent;
-  outline: none;
 }

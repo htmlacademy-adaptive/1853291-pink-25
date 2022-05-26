@@ -67,27 +67,27 @@
   color: $color-white;
 
   @media (max-width: $mobile-width-only) {
-    .header__logo--tablet {
+    .logo__tablet {
       display: none;
     }
 
-    .header__logo--desktop {
+    .logo__desktop {
       display: none;
     }
   }
 
   @media (min-width: $tablet-width) {
-    .header__logo--mobile {
+    .logo__mobile {
       display: none;
     }
 
-    .header__logo--desktop {
+    .logo__desktop {
       display: none;
     }
   }
 
   @media (min-width: $desktop-width) {
-    .header__logo--desktop {
+    .logo__desktop {
       display: block;
     }
 
@@ -95,7 +95,7 @@
       display: none;
     }
 
-    .header__logo--tablet {
+    .logo__tablet {
       display: none;
     }
   }

@@ -32,3 +32,21 @@
 .catalog__item {
   background-color: $color-gray;
 }
+
+.catalog__slogan {
+  text-align: center;
+  padding: 30px 15px;
+  line-height: 30px;
+  font-size: 14px;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    padding: 75px 80px 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 30px;
+    padding: 75px 180px 55px;
+  }
+}
