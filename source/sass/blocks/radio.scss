@@ -39,6 +39,14 @@
   border-color: $color-primary;
 }
 
+.radio__input:not(:checked):focus ~ .radio__text::before {
+  border-color: $color-accent;
+}
+
+.radio__input:focus ~ .radio__text::before {
+  border-color: $color-accent;
+}
+
 .radio:active .radio__text::before {
   border-color: $color-accent;
 }

@@ -92,3 +92,11 @@
   right: 0;
   transform: rotate(180deg);
 }
+
+.feedback-item__control:hover {
+  background-image: url("../img/feedback/slider-control-hover.svg");
+}
+
+.feedback-item__control:active {
+  background-image: url("../img/feedback/slider-control-down.svg");
+}
