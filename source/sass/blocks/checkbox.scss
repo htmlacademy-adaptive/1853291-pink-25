@@ -50,10 +50,10 @@
   border-color: $color-accent;
 }
 
-.checkbox:active .checkbox__text::before {
+.checkbox__input:focus ~ .checkbox__text::before {
   border-color: $color-accent;
 }
 
-.checkbox__input[type="checkbox"]:focus-visible .checkbox__text::before {
+.checkbox:active .checkbox__text::before {
   border-color: $color-accent;
 }

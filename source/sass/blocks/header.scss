@@ -62,53 +62,6 @@
   }
 }
 
-.header__logo {
-  display: block;
-  color: $color-white;
-
-  @media (max-width: $mobile-width-only) {
-    .logo__tablet {
-      display: none;
-    }
-
-    .logo__desktop {
-      display: none;
-    }
-  }
-
-  @media (min-width: $tablet-width) {
-    .logo__mobile {
-      display: none;
-    }
-
-    .logo__desktop {
-      display: none;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    .logo__desktop {
-      display: block;
-    }
-
-    .header__logo--molile {
-      display: none;
-    }
-
-    .logo__tablet {
-      display: none;
-    }
-  }
-}
-
-.header__logo:hover {
-  color: $color-accent;
-}
-
-.header__logo:active {
-  opacity: 0.3;
-}
-
 .header__nav--closed .header__list {
   @media (max-width: 1039px) {
     display: none;

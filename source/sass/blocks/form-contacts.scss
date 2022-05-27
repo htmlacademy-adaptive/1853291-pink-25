@@ -94,3 +94,9 @@
     background-image: url("../img/form/mail-icon.svg");
   }
 }
+
+.form-contacts__input {
+  @media (min-width: $tablet-width) {
+    padding-right: 80px;
+  }
+}
